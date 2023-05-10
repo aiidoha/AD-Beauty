@@ -1,0 +1,37 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+#MainPics {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+#decorMain {
+  width: 50%;
+}
+#skincareMain {
+  width: 50%;
+}
+#mainLogo {
+  position: absolute;
+  right: 38%;
+  top: 8%;
+  width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  #decorMain {
+    width: 100%;
+  }
+  #skincareMain {
+    width: 100%;
+  }
+  #mainLogo {
+    position: absolute;
+    right: 28%;
+    top: 45%;
+    width: 40%;
+  }
+}

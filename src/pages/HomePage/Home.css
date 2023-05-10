@@ -1,0 +1,60 @@
+#HomePage {
+  display: flex;
+  width: 100%;
+  background-color: #f5dee3;
+  height: 100vh;
+}
+#rightHomePage {
+  width: 50%;
+}
+#leftHomePage {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#leftHomePage h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  margin-bottom: 12px;
+  color: #b3848f;
+}
+
+#leftHomePage h3 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  color: #7f2549;
+  margin-bottom: 34px;
+}
+
+#leftHomePage button {
+  width: 40%;
+  /* height: 53.88px; */
+  font-family: "Montserrat";
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #7f2549;
+  padding: 1.56%;
+  border: 1px solid #7f2549;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #rightHomePage {
+    display: none;
+  }
+  #leftHomePage button {
+    width: 70%;
+  }
+}
