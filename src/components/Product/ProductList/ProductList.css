@@ -1,3 +1,8 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
 #productListContainer {
   width: 100%;
   height: 100vh;
@@ -6,7 +11,8 @@
 #productList {
   padding: 3.9% 8.46%;
 }
-#addBlockH2 {
+
+.addBlockH2 {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 2.8rem;
@@ -14,6 +20,7 @@
   /* text-align: center; */
   color: #7f2549;
   margin-bottom: 4%;
+  width: 70%;
 }
 #productListCards {
   display: flex;
@@ -23,7 +30,7 @@
   border: 1px solid #999998;
   width: 337px;
   height: 424px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 .listCardTop {
   width: 100%;
@@ -99,4 +106,55 @@
   border: 1px solid #7f2549;
   border-radius: 1rem;
   margin: 0%;
+}
+.adminBtns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.editdelete {
+  margin: 0%;
+
+  background-color: transparent;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 38px;
+  width: 150px;
+  height: 45px;
+  border-radius: 15px;
+  border: 1px solid #7f2549;
+  color: #b3848f;
+}
+.editdelete:hover {
+  margin: 0%;
+  color: white;
+  background: #eac6d0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  #addBlock {
+    flex-direction: column;
+    align-items: center;
+  }
+  #addBlock button {
+    width: 100%;
+  }
+  .addBlockH2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .editdelete {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .editdelete {
+    margin-top: 80px;
+    width: 130px;
+  }
 }

@@ -33,9 +33,10 @@
   color: #7f2549;
   margin-bottom: 34px;
 }
-
-#leftHomePage button {
+#leftHomePage a {
   width: 40%;
+}
+#leftHomePage button {
   /* height: 53.88px; */
   font-family: "Montserrat";
   background-color: transparent;

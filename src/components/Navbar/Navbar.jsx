@@ -6,20 +6,32 @@ import adminNav from "../assets/adminIconNav.png";
 import burger from "../assets/burgerMenu.png";
 import "../Navbar/NavBar.css";
 import { Link } from "react-router-dom";
+import heartIcon from "../assets/heartNav.png";
 const Navbar = () => {
   return (
-    <div>
+    <div id="navcont">
       <div>
         <div className="container" id="navbar">
-          <img src={logoNavBar} alt="logo" />
+          <Link to="/">
+            <img src={logoNavBar} alt="logo" />
+          </Link>
           <ul>
-            <Link to="/products">
+            <Link
+              style={{ textDecoration: "none", color: "white" }}
+              to="/products"
+            >
               <li className="navLi">SHOP NOW</li>
             </Link>
-            <Link to="/bestsellers">
+            <Link
+              style={{ textDecoration: "none", color: "white" }}
+              to="/bestsellers"
+            >
               <li className="navLi">BEST SELLERS</li>
             </Link>
-            <Link to="/catalogue">
+            <Link
+              style={{ textDecoration: "none", color: "white" }}
+              to="/catalogue"
+            >
               <li className="navLi">CATALOGUE</li>
             </Link>
           </ul>
@@ -27,6 +39,7 @@ const Navbar = () => {
             <img src={searchNav} alt="" />
             <img src={favorites} alt="" />
             <img src={adminNav} alt="" />
+            <img src={heartIcon} alt="" />
           </div>
           <img id="burger" src={burger} alt="" />
         </div>

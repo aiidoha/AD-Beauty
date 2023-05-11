@@ -5,7 +5,7 @@ import skincareMain from "../assets/skincare.png";
 import "../MainPage/Main.css";
 const MainPage = () => {
   return (
-    <div style={{ position: "relative" }}>
+    <div id="cont" style={{ position: "relative" }}>
       <img id="mainLogo" src={logo} alt="" />
       <div id="MainPics">
         <img id="decorMain" src={decorMain} alt="" />
