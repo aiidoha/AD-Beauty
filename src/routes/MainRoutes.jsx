@@ -7,6 +7,7 @@ import Catalogue from "../pages/Catalogue/Catalogue";
 import { Route, Routes } from "react-router-dom";
 import NotFoundPage from "../pages/NotFoundPage";
 import AdminPanel from "../components/Product/AdminPanel";
+import BestSellersSkin from "../pages/BestSellers/BestSellersSkin";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -20,6 +21,7 @@ const MainRoutes = () => {
     // { link: "/edit/:id", element: <EditProductPage />, id: 8 },
     // { link: "/news", element: <NewsPages />, id: 9 },
     // { link: "/cart", element: <CartPage />, id: 10 },
+    { link: "/bestsellersSkin", element: <BestSellersSkin />, id: 11 },
   ];
   return (
     <>
