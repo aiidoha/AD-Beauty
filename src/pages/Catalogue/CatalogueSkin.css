@@ -1,0 +1,188 @@
+#catalogueContainer {
+  padding-top: 20%;
+  width: 100%;
+  height: 1600px;
+  background-color: #f2defd;
+}
+#catalogueContainer h2 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 2.7rem;
+  line-height: 74px;
+  color: #7f2549;
+  margin-left: 10%;
+}
+#catalogueWhiteBg {
+  width: 100%;
+  height: 700px;
+  background-color: #fff0ff;
+  display: flex;
+  position: relative;
+}
+.categoryCleanser {
+  width: 400px;
+  height: 530px;
+  background-image: url("../../pages/assets/cleanserBg.jpg");
+  background-size: cover;
+  border: 1px solid #999998;
+  position: absolute;
+}
+
+.categorySerum {
+  width: 400px;
+  height: 530px;
+  background-image: url("../../pages/assets/serumBg.jpg");
+  background-size: cover;
+  border: 1px solid #999998;
+  position: absolute;
+}
+
+.categoryCream {
+  width: 400px;
+  height: 530px;
+  background-image: url("../../pages/assets/creamBg.jpg");
+  background-size: cover;
+  border: 1px solid #999998;
+  position: absolute;
+}
+.categoryEssence {
+  width: 400px;
+  height: 530px;
+  background-image: url("../../pages/assets/essenceBg.jpg");
+  background-size: cover;
+  border: 1px solid #999998;
+  position: absolute;
+}
+
+.categoryToner {
+  width: 400px;
+  height: 530px;
+  background-image: url("../../pages/assets/tonerBg.jpg");
+  background-size: cover;
+  border: 1px solid #999998;
+  position: absolute;
+}
+
+#categoryLeft {
+  margin-left: 15%;
+  margin-top: 5%;
+}
+#categoryLeftToner {
+  margin-left: 20%;
+  margin-top: 46%;
+}
+#categoryRight {
+  display: flex;
+  flex-direction: column;
+}
+#creamCont {
+  margin-top: 25%;
+  margin-left: 13%;
+}
+#cleanserCont {
+  margin-left: 89px;
+  margin-top: -250px;
+}
+#essenceCont {
+  margin-left: 8%;
+  margin-top: 68%;
+}
+.categoryTitle {
+  margin-top: 125%;
+  margin-left: 35%;
+}
+#adaptcatalogue {
+  display: none;
+  justify-content: space-between;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+.picSerum {
+  background-image: url("../../pages/assets/serumBg.jpg");
+  width: 26%;
+  height: 70vh;
+  background-size: cover;
+}
+
+.picCream {
+  width: 26%;
+  height: 70vh;
+  background-size: cover;
+  background-image: url("../../pages/assets/creamBg.jpg");
+}
+
+.picCleanser {
+  width: 26%;
+  height: 70vh;
+  background-size: cover;
+  background-image: url("../../pages/assets/cleanserBg.jpg");
+}
+.picEssence {
+  width: 26%;
+  height: 70vh;
+  background-size: cover;
+  background-image: url("../../pages/assets/essenceBg.jpg");
+}
+.picToner {
+  width: 26%;
+  height: 70vh;
+  background-size: cover;
+  background-image: url("../../pages/assets/tonerBg.jpg");
+}
+.title {
+  width: 30%;
+}
+@media screen and (max-width: 1024px) {
+  #catalogueWhiteBg {
+    display: none;
+  }
+  #adaptcatalogue {
+    display: flex;
+  }
+}
+@media screen and (max-width: 700px) {
+  #catalogueWhiteBg {
+    display: none;
+  }
+  #adaptcatalogue {
+    display: flex;
+    flex-direction: column;
+  }
+  .picCleanser {
+    margin-bottom: 5%;
+    width: 90%;
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url("../../pages/assets/cleanserBg.jpg");
+  }
+  .picCream {
+    width: 90%;
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url("../../pages/assets/creamBg.jpg");
+    margin-bottom: 5%;
+  }
+  .picSerum {
+    background-image: url("../../pages/assets/serumBg.jpg");
+    width: 90%;
+    min-height: 100vh;
+    background-size: cover;
+    margin-bottom: 5%;
+  }
+
+  .picToner {
+    width: 90%;
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url("../../pages/assets/tonerBg.jpg");
+    margin-bottom: 5%;
+  }
+
+  .picEssence {
+    width: 90%;
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url("../../pages/assets/essenceBg.jpg");
+    margin-bottom: 5%;
+  }
+}

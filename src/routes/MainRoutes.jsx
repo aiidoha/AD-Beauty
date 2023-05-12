@@ -7,6 +7,11 @@ import Catalogue from "../pages/Catalogue/Catalogue";
 import { Route, Routes } from "react-router-dom";
 import NotFoundPage from "../pages/NotFoundPage";
 import AdminPanel from "../components/Product/AdminPanel";
+import ProductListSkin from "../components/Product/ProductList/ProductListSkin";
+import BestSellersSkin from "../pages/BestSellers/BestSellersSkin";
+import CatalogueSkin from "../pages/Catalogue/CatalogueSkin";
+import HomeSkin from "../pages/HomePage/HomeSkin";
+import AdminPanelSkin from "../components/Product/AdminPanelSkin";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -20,7 +25,13 @@ const MainRoutes = () => {
     // { link: "/edit/:id", element: <EditProductPage />, id: 8 },
     // { link: "/news", element: <NewsPages />, id: 9 },
     // { link: "/cart", element: <CartPage />, id: 10 },
+    { link: "/productsSkin", element: <ProductListSkin />, id: 11 },
+    { link: "/bestsellersSkin", element: <BestSellersSkin />, id: 12 },
+    { link: "/catalogueSkin", element: <CatalogueSkin />, id: 13 },
+    { link: "/homeSkin", element: <HomeSkin />, id: 14 },
+    { link: "/adminSkin", element: <AdminPanelSkin />, id: 15 },
   ];
+
   return (
     <>
       <Routes>
