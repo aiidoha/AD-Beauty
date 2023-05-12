@@ -38,7 +38,7 @@ const MainRoutes = () => {
     { link: "/editSkin/:id", element: <EditProductSkin />, id: 16 },
     { link: "/add", element: <AddProduct />, id: 17 },
     { link: "/addSkin", element: <AddProductSkin />, id: 18 },
-    { link: "/detailsModal", element: <Details />, id: 19 },
+    // { link: "/detailsModal", element: <Details />, id: 19 },
   ];
 
   return (
