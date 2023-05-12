@@ -12,6 +12,10 @@ import BestSellersSkin from "../pages/BestSellers/BestSellersSkin";
 import CatalogueSkin from "../pages/Catalogue/CatalogueSkin";
 import HomeSkin from "../pages/HomePage/HomeSkin";
 import AdminPanelSkin from "../components/Product/AdminPanelSkin";
+import EditProduct from "../components/Product/EditProduct";
+import EditProductSkin from "../components/Product/EditProductSkin";
+import AddProduct from "../components/Product/AddProduct";
+import AddProductSkin from "../components/Product/AddProductSkin";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -22,7 +26,7 @@ const MainRoutes = () => {
     { link: "/products", element: <ProductList />, id: 5 },
     { link: "*", element: <NotFoundPage />, id: 6 },
     { link: "/admin", element: <AdminPanel />, id: 7 },
-    // { link: "/edit/:id", element: <EditProductPage />, id: 8 },
+    { link: "/edit/:id", element: <EditProduct />, id: 8 },
     // { link: "/news", element: <NewsPages />, id: 9 },
     // { link: "/cart", element: <CartPage />, id: 10 },
     { link: "/productsSkin", element: <ProductListSkin />, id: 11 },
@@ -30,6 +34,9 @@ const MainRoutes = () => {
     { link: "/catalogueSkin", element: <CatalogueSkin />, id: 13 },
     { link: "/homeSkin", element: <HomeSkin />, id: 14 },
     { link: "/adminSkin", element: <AdminPanelSkin />, id: 15 },
+    { link: "/editSkin/:id", element: <EditProductSkin />, id: 16 },
+    { link: "/add", element: <AddProduct />, id: 17 },
+    { link: "/addSkin", element: <AddProductSkin />, id: 18 },
   ];
 
   return (
