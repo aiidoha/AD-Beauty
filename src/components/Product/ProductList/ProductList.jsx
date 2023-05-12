@@ -11,9 +11,18 @@ import Footer from "../../Footer/Footer";
 
 const ProductList = () => {
   const { products, getProducts } = useProducts();
+  console.log(products);
+  const product = [...products];
+  function notskin() {
+    return product.filter((elem) => elem.division !== "skin");
+  }
+
   useEffect(() => {
     getProducts();
+    notskin();
   }, []);
+  const skinProducts = notskin();
+
   return (
     <>
       <Navbar />
@@ -23,7 +32,7 @@ const ProductList = () => {
           <div id="productList">
             <h2 className="addBlockH2">ALL</h2>
             <div id="productListCards">
-              {products.map((item) => (
+              {skinProducts.map((item) => (
                 <ProductCard key={item.id} item={item} />
               ))}
             </div>

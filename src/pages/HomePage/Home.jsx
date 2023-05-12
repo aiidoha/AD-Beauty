@@ -9,6 +9,7 @@ const Home = () => {
     <>
       <div>
         <Navbar />
+        <div className="divider"></div>
         <div id="HomePage">
           <div id="leftHomePage">
             <h1>YOUR FAVE LIP COMBO</h1>

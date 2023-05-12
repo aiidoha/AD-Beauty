@@ -12,7 +12,7 @@ export default function ProductCard({ item }) {
       <div className="listCardTop">
         <img
           className="listCardImg"
-          style={{ height: "336px" }}
+          style={{ height: "372px" }}
           src={item.image}
           alt=""
         />
@@ -20,11 +20,11 @@ export default function ProductCard({ item }) {
       </div>
       <div className="listCardBottom">
         <div className="listCardTitle">
-          <h4>${item.title}</h4>
+          <h4>{item.title}</h4>
           {/* <span>{item.type}</span> */}
         </div>
         <div>
-          {/* <h3>{item.price}</h3> */}
+          <h3>${item.price}</h3>
           <img src={cartIcon} alt="aidai" style={{ padding: "5px 13px" }} />
         </div>
       </div>
