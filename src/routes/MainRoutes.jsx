@@ -12,10 +12,10 @@ import BestSellersSkin from "../pages/BestSellers/BestSellersSkin";
 import CatalogueSkin from "../pages/Catalogue/CatalogueSkin";
 import HomeSkin from "../pages/HomePage/HomeSkin";
 import AdminPanelSkin from "../components/Product/AdminPanelSkin";
-import EditProduct from "../components/Product/EditProduct";
 import EditProductSkin from "../components/Product/EditProductSkin";
 import AddProduct from "../components/Product/AddProduct";
 import AddProductSkin from "../components/Product/AddProductSkin";
+import EditProduct from "../components/Product/EditProduct";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
