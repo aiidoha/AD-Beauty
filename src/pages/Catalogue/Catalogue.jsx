@@ -12,6 +12,7 @@ import { CardActionArea } from "@mui/material";
 import faceBg from "../assets/faceBg.jpg";
 import eyebg from "../assets/eyeBg.jpg";
 import lipsBg from "../assets/lipsBg.jpg";
+import Footer from "../../components/Footer/Footer";
 const Catalogue = () => {
   return (
     <>
@@ -44,6 +45,7 @@ const Catalogue = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
