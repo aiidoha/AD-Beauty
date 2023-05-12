@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import emptyHeart from "../Product/assets/Vector.png";
 import fullHeart from "../Product/assets/Vector-1.png";
 import cardBg from "../Product/assets/cardBg.png";
@@ -6,9 +6,23 @@ import "../Product/ProductList/ProductList.css";
 import cartIcon from "../assets/cartIcon.png";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import { useProducts } from "../../contexts/ProductContextProvider";
 const AdminPanel = () => {
+  const { products, getProducts } = useProducts();
+  console.log(products);
+  const product = [...products];
+  function notskin() {
+    return product.filter((elem) => elem.division !== "skin");
+  }
+
+  useEffect(() => {
+    getProducts();
+    notskin();
+  }, []);
+  const skinProducts = notskin();
   return (
     <>
+      <div className="divider"></div>
       <Navbar />
       <div id="prodcont">
         <div id="productListContainer">
@@ -30,7 +44,7 @@ const AdminPanel = () => {
                     <span>type</span>
                   </div>
                   <div>
-                    <h3>$$$$</h3>{" "}
+                    <h3>$$$$</h3>
                     <img
                       src={cartIcon}
                       alt="aidai"

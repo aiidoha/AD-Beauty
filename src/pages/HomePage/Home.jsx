@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import HomeBg from "../assets/homeBg.png";
 import "../HomePage/Home.css";
 import ProductList from "../../components/Product/ProductList/ProductList";
+import AddProduct from "../../components/Product/AddProduct";
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
     <>
       <div>
         <Navbar />
+        <div className="divider"></div>
         <div id="HomePage">
           <div id="leftHomePage">
             <h1>YOUR FAVE LIP COMBO</h1>

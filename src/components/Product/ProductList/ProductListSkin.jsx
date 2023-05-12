@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import emptyHeart from "../assets/Vector.png";
 import fullHeart from "../assets/Vector-1.png";
 import cardBg from "../assets/cardBg.png";
@@ -7,8 +7,23 @@ import cartIcon from "../../assets/cartIcon.png";
 
 import NavbarSkin from "../../Navbar/NavbarSkin";
 import FooterSkin from "../../Footer/FooterSkin";
+import ProductCardSkin from "../ProductCardSkin";
+import { useProducts } from "../../../contexts/ProductContextProvider";
 
 const ProductListSkin = () => {
+  const { products, getProducts } = useProducts();
+  console.log(products);
+  const product = [...products];
+  function skin() {
+    return product.filter((elem) => elem.division === "skin");
+  }
+
+  useEffect(() => {
+    getProducts();
+    skin();
+  }, []);
+  const skinProducts = skin();
+
   return (
     <>
       <NavbarSkin />
@@ -18,130 +33,9 @@ const ProductListSkin = () => {
           <div id="productListSkin">
             <h2 className="addBlockH2Skin">ALL</h2>
             <div id="productListCardsSkin">
-              <div className="listCardSkin">
-                <div className="listCardTopSkin">
-                  <img className="listCardImgSkin" src={cardBg} alt="" />
-                  <img className="listCardHeartSkin" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottomSkin">
-                  <div className="listCardTitleSkin">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <div>
-                    <h3>$$$$</h3>{" "}
-                    <img
-                      src={cartIcon}
-                      alt="aidai"
-                      style={{ padding: "5px 13px" }}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="listCardSkin">
-                <div className="listCardTopSkin">
-                  <img className="listCardImgSkin" src={cardBg} alt="" />
-                  <img className="listCardHeartSkin" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottomSkin">
-                  <div className="listCardTitleSkin">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
-              <div className="listCardSkin">
-                <div className="listCardTopSkin">
-                  <img className="listCardImgSkin" src={cardBg} alt="" />
-                  <img className="listCardHeartSkin" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottomSkin">
-                  <div className="listCardTitleSkin">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
-              <div className="listCardSkin">
-                <div className="listCardTopSkin">
-                  <img className="listCardImgSkin" src={cardBg} alt="" />
-                  <img className="listCardHeartSkin" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottomSkin">
-                  <div className="listCardTitleSkin">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
-              <div className="listCardSkin">
-                <div className="listCardTopSkin">
-                  <img className="listCardImgSkin" src={cardBg} alt="" />
-                  <img className="listCardHeartSkin" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottomSkin">
-                  <div className="listCardTitleSkin">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
-              <div className="listCardSkin">
-                <div className="listCardTopSkin">
-                  <img className="listCardImgSkin" src={cardBg} alt="" />
-                  <img className="listCardHeartSkin" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottomSkin">
-                  <div className="listCardTitleSkin">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
-              <div className="listCardSkin">
-                <div className="listCardTopSkin">
-                  <img className="listCardImgSkin" src={cardBg} alt="" />
-                  <img className="listCardHeartSkin" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottomSkin">
-                  <div className="listCardTitleSkin">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
-              <div className="listCardSkin">
-                <div className="listCardTopSkin">
-                  <img className="listCardImgSkin" src={cardBg} alt="" />
-                  <img className="listCardHeartSkin" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottomSkin">
-                  <div className="listCardTitleSkin">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
-              <div className="listCardSkin">
-                <div className="listCardTopSkin">
-                  <img className="listCardImgSkin" src={cardBg} alt="" />
-                  <img className="listCardHeartSkin" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottomSkin">
-                  <div className="listCardTitleSkin">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
+              {skinProducts.map((item) => (
+                <ProductCardSkin key={item.id} item={item} />
+              ))}
             </div>
           </div>
         </div>

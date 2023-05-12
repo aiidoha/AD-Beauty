@@ -1,0 +1,359 @@
+{
+  "products": [
+    {
+      "title": "Optimist Soft Radiance Setting Powder",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Setting-Powder-Light-SKU_360x.jpg?v=1639180715",
+      "type": "face",
+      "description": "Super finely milled and silky to the touch, this talc-free loose mineral powder goes on light and airy to provide sheer, seamless coverage with a subtle radiance and a natural finish.",
+      "price": "25",
+      "category": "fav",
+      "id": 1
+    },
+    {
+      "title": "Silky Touch Highlighter",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/positive-light-silky-touch-highlighter-flaunt-1440x1952.jpg?v=1669937801",
+      "type": "face",
+      "description": "Finally—the ultra glass-like glow of a liquid highlighter in a convenient powder form. The look: Instantly dewy, smooth, reflective skin—all from an easy compact.",
+      "price": "25",
+      "id": 2
+    },
+    {
+      "title": "Soft Pinch Liquid Blush",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/pdp-sku-Liquid-Blush-Dewy-Hope.jpg?v=1645133400",
+      "type": "face",
+      "description": "Airy, lightweight liquid formula blends and builds effortlessly for a soft flush of color. Infused with long-lasting color pigments for all-day wear—a little goes a long way.",
+      "price": "23",
+      "category": "fav",
+      "id": 3
+    },
+    {
+      "title": "Setting Powder",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/vofpk1pjr6eh3azbigvl.jpg?v=1671539684",
+      "type": "face",
+      "description": "my setting powder locks in makeup, mattifies, and minimizes excess shine all in one silky, skin-breathable formula. available in 6 shades, this loose, weightless powder was designed for all skin tones and is a must-have for keeping your makeup looking good all day long.",
+      "price": "26",
+      "id": 4
+    },
+    {
+      "title": "Glow Balm Bundle",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KJC_SUMMER_22_Glow_20Balm_Bundle_01-1.jpg?v=1672604021",
+      "type": "face",
+      "description": "my glow balm bundle features all four easily wearable shades of my lip & cheek glow balm. this silky, weightless cream instantly melts into the skin while providing buildable color without cakiness or streaks. wear it on your cheeks for a second-skin glow, or on your lips for a hint of color and sheen.",
+      "price": "61",
+      "category": "fav",
+      "id": 5
+    },
+    {
+      "title": "Pressed Blush Powder",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KC-Blush-WinterKissed-CapOff.jpg?v=1676400349",
+      "type": "face",
+      "description": "my pressed blush powder delivers a long-lasting, velvet-matte flush of color. this lightweight, buildable formula effortlessly blends into skin for a comfortable, non-drying finish.",
+      "price": "20",
+      "id": 6
+    },
+
+    {
+      "title": "Mascara And Liquid Eyeshadows Bundle",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KJC_KVMASC_23_Mascara_and_Liquid_Shadow_Bundle.jpg?v=1680892160",
+      "type": "eye",
+      "description": "my everyday eye essentials bundle features all five shades of my matte liquid eyeshadows and my kylash volume mascara. the eyeshadow’s whipped, cream-to-powder texture seamlessly blends to deliver long-wear, soft-matte color. complete your eye look with my volumizing mascara that provides fuller, lifted, and defined lashes without clumping, smudging, or flaking.",
+      "price": "111.50",
+      "category": "fav",
+      "id": 7
+    },
+    {
+      "title": "Mini Mauve Eyeshadow Palette",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KJC_HOLIDAY_GIFT_SET_22_Mini_Kyshadow_Palette_Mauve_Open_V2.jpg?v=1676419630",
+      "type": "eye",
+      "description": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KJC_HOLIDAY_GIFT_SET_22_Mini_Kyshadow_Palette_Mauve_Open_V2.jpg?v=1676419630",
+      "price": "19",
+      "id": 8
+    },
+    {
+      "title": "Gel Eyeliner Pencil",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KC-GelPencil_EPI_2023_MattePlum.jpg?v=1676404506",
+      "type": "eye",
+      "description": "my gel eyeliner pencil lets you create defined eyeliner looks. its ultra-creamy, ultra-gliding formula delivers perfect one-stroke application, with extreme intensity and long-lasting wear.",
+      "price": "16",
+      "category": "fav",
+      "id": 9
+    },
+    {
+      "title": "Perfect Strokes Eye Essentials",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/perfect-strokes-eye-essentials-03-1440x1952.jpg?v=1663116429",
+      "type": "eye",
+      "description": "Limited Edition: Everything you need to make Selena’s signature eye look your own, featuring a full-size Perfect Strokes Matte Liquid Liner and a full-size Perfect Strokes Universal Volumizing Mascara.",
+      "price": "30",
+      "id": 10
+    },
+    {
+      "title": "Rare Beauty Discovery Eyeshadow Palette",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/discovery-eyeshadow-palette-give-yourself-grace-ecomm-02-1440x1952.jpg?v=1677872715",
+      "type": "eye",
+      "description": "An eyeshadow palette of seven rich, buttery shades in a range of long-lasting finishes, each inspired by our iconic Soft Pinch Liquid Blush collection.",
+      "price": "29",
+      "id": 11
+    },
+    {
+      "title": "Brow Harmony Shape & Fill Duo",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Brow-Harmony-Palette-Rich-Taupe-SKU.jpg?v=1630021439",
+      "type": "eye",
+      "description": "A waterproof brow putty that softly shapes and fills in brows for a natural, mistakeproof look that lasts—complete with a snap-in angled brush and spoolie.",
+      "price": "27",
+      "category": "fav",
+      "id": 12
+    },
+    {
+      "title": "Rare Beauty Kind Words Lip Set",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/kind-words-custom-set-1440x1952_360x.jpg?v=1678328542",
+      "type": "eye",
+      "description": "for a natural, mistakeproof look that lasts—complete with a snap-in angled brush and spoolie.",
+      "price": "30",
+      "category": "fav",
+      "id": 13
+    },
+    {
+      "title": "Lip Soufflé Matte Lip Cream Duo",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Holiday-Duo-SKU.jpg?v=1633740142",
+      "type": "lip",
+      "description": "Give the gift of wearable nude lips that go with everything. For a limited time only, bestselling shade Courage, a gorgeous nude mauve, joins new, set-exclusive shade Ambition, a warm golden brown.",
+      "price": "20",
+      "id": 14
+    },
+    {
+      "title": "Soft Pinch Tinted Lip Oil",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/soft-pinch-tinted-lip-oil-hope-1440x1952.jpg?v=1679094432",
+      "type": "lip",
+      "description": "An innovative lip jelly that transforms into a lightweight oil, starting off glossy, then leaving lips tinted while staying comfortable—never sticky—all day.",
+      "price": "20",
+      "category": "fav",
+      "id": 15
+    },
+    {
+      "title": "Kylie's Favorites Lip Kit Trio",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KJC_Bundle_KylieFavoriteLipKits_30c4548c-9563-4d75-b4d3-93f434514d57.jpg?v=1672602703",
+      "type": "lip",
+      "description": "my favorites lip kit trio contains three of my go-to shades for the perfect matte lip look. each kit comes with a matte liquid lipstick and lip liner duo that lets you create highly pigmented, long-lasting lip looks.",
+      "price": "91.50",
+      "id": 16
+    },
+    {
+      "title": "Pamper Your Pout Bundle - Kylie",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KS_Pamper-Your-Pout_Ecomm-Pink_01.jpg?v=1676680377",
+      "type": "lip",
+      "description": "my pamper your pout bundle – kylie contains three must-haves for getting a smooth and non-drying matte lip look. this bundle features my exfoliating sugar lip scrub, hydrating lip oil, and highly pigmented matte lip kit in the shade kylie, a soft dusty rose.",
+      "price": "70",
+      "id": 17
+    },
+    {
+      "title": "high gloss trio",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KJC_HOLIDAY_20GIFT_20SET_22_High_20Gloss_20Set_01_WS.jpg?v=1674192762",
+      "type": "lip",
+      "description": "My high gloss trio adds the perfect shine that’ll last through any party. featuring three versatile, ultra-shiny shades, this non-sticky formula is comfortable to wear and can be worn on its own or layered over your favorite lipstick.",
+      "price": "30",
+      "category": "fav",
+      "id": 18
+    },
+    {
+      "title": "Jelly Oil Makeup-Melting Cleanser",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_S23_T2PRODUCT-EDITORIAL_MELTAWF-JELLYCLEANSER_SMEAR_1200x1500_72DPI_600x.jpg?v=1677777651",
+      "type": "cleanser",
+      "description": "Finally, look forward to taking off your makeup at the end of the day—for real. This innovative jelly-oil cleanser comes in a mess-free pump and contains a custom blend of 9 luxe oils ready to erase every type of even waterproof and longwear makeup, without the drama.",
+      "price": "41",
+      "category": "skinFav",
+      "id": 19,
+      "division": "skin"
+    },
+    {
+      "title": "CLEANS'R REMOVE-IT-ALL CLEANSER ",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47618_600x.jpg?v=1614390662",
+      "type": "cleanser",
+      "description": "Get that fresh, clean feeling with our plush creamy cleanser that refines the look of pores and instantly washes away dirt, oil and impurities without leaving skin feeling tight.",
+      "price": "34",
+      "id": 20,
+      "division": "skin"
+    },
+    {
+      "title": "COCOA CLEANS'R ALL-OVER CLEANSING BAR",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_FALL22_T2PRODUCT_ECOMM_COCOA_CLEANS_R_SOOTHING_ALL-OVER_CLEANSING_BAR_Bar_Dish_1200x1500_094609a5-3db8-4399-a6be-d331f752c27d_600x.jpg?v=1658960881",
+      "type": "cleanser",
+      "description": "Airy, lightweight liquid formula blends and builds effortlessly for a soft flush of color. Infused with long-lasting color pigments for all-day wear—a little goes a long way.",
+      "price": "23",
+
+      "id": 21,
+      "division": "skin"
+    },
+    {
+      "title": "Radiance Cleansing Balm",
+      "image": "https://cdn.shopify.com/s/files/1/0558/4135/7989/products/0O8A9397.jpg?v=1653271971&width=3000",
+      "type": "cleanser",
+      "description": "It is a balm-type cleansing oil that gently melts eye, lip, base makeup and sebum. It contains rice bran and various grain extracts, so the skin does not get dry and remains moist.",
+      "price": "19",
+      "id": 22,
+      "division": "skin"
+    },
+    {
+      "title": "Ginseng Cleansing Oil",
+      "image": "https://cdn.shopify.com/s/files/1/0558/4135/7989/products/0O8A5803.jpg?v=1655436385&width=3000",
+      "type": "cleanser",
+      "description": "We believe that the most important step in skin care is cleansing.If skin waste and sebum are not washed thoroughly and allowed to accumulate in the pores, they can cause skin inflammation. The role of cleansing oil is to help remove waste from the skin through gently dissolving and emulsifying wastes.",
+      "price": "20",
+      "category": "skinFav",
+      "id": 23,
+      "division": "skin"
+    },
+    {
+      "title": "Rice Cleansing Bar & Nobang Soap Saver Kit",
+      "image": "https://cdn.shopify.com/s/files/1/0558/4135/7989/products/0O8A9519_b61a9a5e-8011-4d53-b11c-578f38133f87.jpg?v=1653273566&width=3000",
+      "type": "cleanser",
+      "description": "Low pH Rice Cleansing Bar is a hypoallergenic, mildly acidic cleansing soap with an acidity similar to the pH of the skin. ​​",
+      "price": "13",
+      "id": 24,
+      "division": "skin"
+    },
+
+    {
+      "title": "Pore-Refining Toner ",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47151_600x.jpg?v=1619802668",
+      "type": "serum",
+      "description": "The power of a serum plus the treatment of a toner in one pore-busting step. It tightens the look of pores, helps visibly fade dark spots, smooths and plumps skin, and checks shine–without stripping moisture.",
+      "price": "41",
+      "category": "skinFav",
+      "id": 25,
+      "division": "skin"
+    },
+    {
+      "title": "START'R SET : DRY SKIN EDITION",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS_S23_T2PRODUCT_ECOM_DRYSTARTER-SET-US_BACKGND_1200x1500_72DPI_600x.jpg?v=1683312373",
+      "type": "serum",
+      "description": "Wherever you go, take hydrated and juicy skin along for the ride with this travel-ready trio. It’s a clean, clinically backed routine made to melt away makeup, snatch pores AND deeply hydrate while protecting skin from the sun—perfect for all, especially those with dry skin.",
+      "price": "59",
+      "id": 26,
+      "division": "skin"
+    },
+    {
+      "title": "Vault AM + PM Skincare Essentials",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_FA20_T2PRODUCT_DOTCOM_BUNDLES_CLOSED_NOTOOL_NEW_600x.jpg?v=1623189827",
+      "type": "serum",
+      "description": "Morning and night skincare essentials to brighten, refine the look of pores and dark spots, target fine lines and wrinkles, and reduce the look of dark circles and puffiness.",
+      "price": "160",
+      "category": "skinFav",
+      "id": 27,
+      "division": "skin"
+    },
+    {
+      "title": "Revive eye serum : Ginseng + Retinal",
+      "image": "https://cdn.shopify.com/s/files/1/0558/4135/7989/products/0O8A5809.jpg?v=1655436404&width=3000",
+      "type": "serum",
+      "description": "When we lack the protein that imparts elasticity to the dermal layer of the skin, collagen and hyaluronic acid decrease, which causes wrinkles. We created an eye serum that helps to improve wrinkles on the sensitive skin around the eyes by combining ginseng extract and retinal.",
+      "price": "17",
+      "id": 28,
+      "division": "skin"
+    },
+    {
+      "title": "Hanbang Serum Discovery Kit",
+      "image": "https://cdn.shopify.com/s/files/1/0558/4135/7989/products/0O8A9509.jpg?v=1654236671&width=3000",
+      "type": "serum",
+      "description": "This is a 10ml mini size set with 4 types of serums so that you can choose to use or layer them according to your skin type or skin issues. Experience a wonderful journey to find the right product for you before taking the plunge on a full-size",
+      "price": "27",
+      "id": 29,
+      "division": "skin"
+    },
+    {
+      "title": "Glow Serum : Propolis + Niacinamide",
+      "image": "https://cdn.shopify.com/s/files/1/0558/4135/7989/products/0O8A9448.jpg?v=1653271835&width=3000",
+      "type": "serum",
+      "description": "This serum is made for troubles with large pores and inflamed skin.Containing 60% propolis extract and 2% niacinamide, it helps to control sebum secretion and keeps the skin moist.",
+      "price": "17",
+
+      "id": 30,
+      "division": "skin"
+    },
+    {
+      "title": "HYDRA VIZOR INVISIBLE MOISTURIZER",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS186550_Fragrance_Free_Launch_Activation_PDP_IMAGE_hydravizor_600x.jpg?v=1645137174",
+      "type": "cream",
+      "description": "Y’all asked—we delivered! The OG formula ain’t goin’ nowhere, but you now have the option to cop a fragrance-free Hydra Vizor. Side note—we don’t have a fragrance-free refill yet, but you can still insert the OG Hydra Vizor Refill into this outer holster.",
+      "price": "47",
+
+      "id": 31,
+      "division": "skin"
+    },
+    {
+      "title": "THICC N SMOOTH RICH PEPTIDE EYE CREAM",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS384351_Global_Thicc_N_Smooth_Infographics_HERO_1200x1500_72DPI_WITHOUT_TEXT_600x.jpg?v=1682020175",
+      "type": "cream",
+      "description": "Young or grown, it's time to fight under eye dryness and dark circles with a do-it-all eye cream. Hydrate, brighten and reduce the look of puffiness with a blend of eye-targeted ingredients, including peptides, caffeine and vitamins that instantly melt into skin. You'll start noticing fewer fine lines and wrinkles in just one week..",
+      "price": "51",
+      "id": 32,
+      "division": "skin"
+    },
+    {
+      "title": "HYDRATE N PROTECT AM + PM MOISTURIZER DUO",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS_FA20_T2PRODUCT_DOTCOM_MOISTURIZER_NIGHTCEAM_1200x1500_2247a38d-5195-4f92-8818-53cb5ab6582a_600x.jpg?v=1683241078",
+      "type": "cream",
+      "description": "Lock in moisture all day long with this full-size dynamic duo to hydrate + protect your skin from pollution with antioxidants in the AM and rest + recover in the PM.",
+      "price": "85",
+
+      "id": 33,
+      "division": "skin"
+    },
+    {
+      "title": "EYE REVIV’R AM + PM EYE ESSENTIALS DUO",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/PDP-1_1_600x.jpg?v=1681149441",
+      "type": "toner",
+      "description": "In the AM, fake a flash nap to instantly brighten, wake up tired-looking eyes and get concealer-ready in seconds. In the PM, apply our do-it-all eye cream to hydrate and reduce the look of fine lines and wrinkles with a blend of rich peptide.",
+      "price": "93.50",
+      "id": 34,
+      "division": "skin"
+    },
+    {
+      "title": "HYDRATING MILKY TONER ESSENCE",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/54821_fat_water_milky_600x.jpg?v=1654822987",
+      "type": "toner",
+      "description": "Fat Water has a new sis in town and she’s ready to dew the most to help keep your skin’s moisture barrier on lock. This toner-essence combo comes through for those looking for more hydration—its thick, milky texture is bursting with feel good, look good ingredients for some major TLC.",
+      "price": "41",
+      "id": 35,
+      "division": "skin"
+    },
+    {
+      "title": "WATER JUMBO  PORE-REFINING TONER ",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS22_HOL_T2_PRODUCT_JUMBO_OG_MINI_FATWATER_0915_04_1200X1500_72DPI_1_600x.jpg?v=1667944643",
+      "type": "toner",
+      "description": "The power of a serum plus the treatment of a toner in one pore-busting step—now in a jumbo size for the true Fat Water lovers. It tightens the look of pores, helps fade dark spots, smooths and plumps skin, and checks shine—without stripping moisture.",
+      "price": "36",
+
+      "id": 36,
+      "division": "skin"
+    },
+    {
+      "title": "Instant Retexturizing 10% AHA Treatment ",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_POSTHOL2021_T2PRODUCT_ECOMM_PRE-SHOW_GLOW_1200x1500_c4d7f1ab-b2d0-4769-aa1c-899672a464f9_600x.jpg?v=1636147771",
+      "type": "essence",
+      "description": "Cop this accompanying treatment refill to use with your existing reusable applicator. Have a minute? Glow big with no downtime. This 10% AHA (Alpha Hydroxy Acid) treatment clarifies, purifies and smooths skin by gently clearing out dull cells on the surface and going deep into pores to smooth, refine, brighten and even texture over time.",
+      "price": "41",
+      "id": 37,
+      "division": "skin"
+    },
+    {
+      "title": "Clay Pore Detox Face Mask  ",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_FSPR_SUM22_T2PRODUCT_ECOMM_COOKIES_N_CLEAN_DETOX_FACE_MASK_OPEN_1200x1500_allure-badge_600x.jpg?v=1663965460",
+      "type": "essence",
+      "description": "The 10-minute pore detox that delivers: whipped Clay and Charcoal deeply purify pores and clear dirt, while leaving skin soft and conditioned. Clinically tested to instantly improve skin’s texture and fight shine all day.",
+      "price": "36",
+      "category": "skinFav",
+      "id": 38,
+      "division": "skin"
+    },
+    {
+      "title": "Niacinamide Pore-Refining Toner ",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS22_HOL_T2_PRODUCT_JUMBO_OG_MINI_FATWATER_0915_04_1200X1500_72DPI_1_600x.jpg?v=1667944643",
+      "type": "toner",
+      "description": "The power of a serum plus the treatment of a toner in one pore-busting step—now in a jumbo size for the true Fat Water lovers. It tightens the look of pores, helps fade dark spots, smooths and plumps skin, and checks shine—without stripping moisture.",
+      "price": "36",
+      "category": "skinFav",
+      "id": 39,
+      "division": "skin"
+    }
+  ]
+}
