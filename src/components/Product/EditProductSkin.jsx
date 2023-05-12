@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
 import "./EditProduct.css";
-import Footer from "../Footer/Footer";
+import NavbarSkin from "../Navbar/NavbarSkin";
+import FooterSkin from "../Footer/FooterSkin";
 
-const EditProduct = () => {
+const EditProductSkin = () => {
   return (
     <>
-      <Navbar />
-      <div id="editProduct">
-        <div className="inpContainer">
+      <NavbarSkin />
+      <div id="editProductSkin">
+        <div id="inpContainer">
           <input className="inpEditProduct" type="text" placeholder="Title" />
           <input className="inpEditProduct" type="url" placeholder="Image" />
           <input className="inpEditProduct" type="text" placeholder="Type" />
@@ -18,12 +18,12 @@ const EditProduct = () => {
             placeholder="Description"
           />
           <input className="inpEditProduct" type="number" placeholder="Price" />
-          <button className="btnEditProduct">SAVE CHANGES</button>
+          <button className="btnEditProductSkin">SAVE CHANGES</button>
         </div>
       </div>
-      <Footer />
+      <FooterSkin />
     </>
   );
 };
 
-export default EditProduct;
+export default EditProductSkin;
