@@ -31,6 +31,7 @@ const MainRoutes = () => {
     { link: "/homeSkin", element: <HomeSkin />, id: 14 },
     { link: "/adminSkin", element: <AdminPanelSkin />, id: 15 },
   ];
+
   return (
     <>
       <Routes>
