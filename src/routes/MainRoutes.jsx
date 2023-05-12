@@ -16,6 +16,7 @@ import EditProductSkin from "../components/Product/EditProductSkin";
 import AddProduct from "../components/Product/AddProduct";
 import AddProductSkin from "../components/Product/AddProductSkin";
 import EditProduct from "../components/Product/EditProduct";
+import Details from "../components/Product/Details";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -37,6 +38,7 @@ const MainRoutes = () => {
     { link: "/editSkin/:id", element: <EditProductSkin />, id: 16 },
     { link: "/add", element: <AddProduct />, id: 17 },
     { link: "/addSkin", element: <AddProductSkin />, id: 18 },
+    { link: "/detailsModal", element: <Details />, id: 19 },
   ];
 
   return (
