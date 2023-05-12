@@ -1,0 +1,61 @@
+#HomePageSkin {
+  display: flex;
+  width: 100%;
+  background-color: #f2defd;
+  height: 100vh;
+}
+#rightHomePageSkin {
+  width: 50%;
+}
+#leftHomePageSkin {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#leftHomePageSkin h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  margin-bottom: 12px;
+  color: #7f2549;
+}
+
+#leftHomePageSkin h3 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  color: #7f2549;
+  margin-bottom: 34px;
+}
+#leftHomePageSkin a {
+  width: 40%;
+}
+#leftHomePageSkin button {
+  /* height: 53.88px; */
+  font-family: "Montserrat";
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #7f2549;
+  padding: 1.56%;
+  border: 1px solid #7f2549;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #rightHomePageSkin {
+    display: none;
+  }
+  #leftHomePageSkin button {
+    width: 70%;
+  }
+}

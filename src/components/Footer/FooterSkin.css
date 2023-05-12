@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  color: white;
+}
+#footerSkin {
+  background-color: #ccaedc;
+  height: 100%;
+  width: 100vw;
+}
+
+.footer__containerSkin {
+  width: 100vw;
+  padding: 5.625rem 0;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstSkin {
+  color: #7f2549;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  width: 98%;
+}
+
+.footer__leftSkin {
+  display: flex;
+  width: 65%;
+  height: 10%;
+}
+
+.footer__rightSkin {
+  width: 25%;
+}
+.support1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+.support {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+.support__a {
+  color: white;
+  display: block;
+  font-size: 0.875rem;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.support__left {
+  width: 50%;
+  height: 100%;
+  padding: 0.1875rem 0;
+  display: block;
+  font-size: 0.875rem;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  transition: color 0.15s;
+  box-sizing: border-box;
+}
+
+.about__puma {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 100%;
+}
+
+.about1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+.right1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
+  float: right;
+  margin-bottom: 3.75rem;
+  padding-bottom: 0;
+}
+.right1 span {
+  color: white;
+}
+.right1 button {
+  border: 0;
+  cursor: pointer;
+  height: 40%;
+  outline: 0;
+  transition: 0.15s;
+  width: 100%;
+  color: #7f2549;
+  background-color: #7f2549;
+  border: 0;
+  color: #fff;
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+  margin-top: 20px;
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+  line-height: 0.9375rem;
+  padding: 0.8125rem 1rem;
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.right3 {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.right3 span {
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+  margin-top: -0.375rem;
+  padding-bottom: 0.1875rem;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.15s;
+}
+
+.footer__bottomSkin {
+  font-size: 0.875rem;
+  color: white;
+  border-top: 1px solid #7f2549;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.option {
+  color: white;
+  background-color: #7f2549;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1.25rem 0;
+  text-align: center;
+  border: 1px solid #7f2549;
+  cursor: pointer;
+  font-size: 0.875rem;
+  margin-bottom: 1.875rem;
+  min-width: 14rem;
+  padding: 1rem 3rem 1rem 1.375rem;
+  position: relative;
+  transition: border 0.15s;
+}
+
+#selected2 {
+  color: white;
+  width: 100%;
+  border: 0;
+  background-color: #7f2549;
+}
+
+.option img {
+  margin-right: 1.125rem;
+  width: 1.25rem;
+}
+
+.span {
+  align-items: center;
+  display: flex;
+  margin: 1.25rem 0;
+  text-align: center;
+}
+
+.span2 {
+  display: flex;
+  align-items: center;
+  margin: 1.25rem 0;
+}
+#span2 {
+  color: white;
+  font-size: 0.875rem;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__container {
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+  }
+  .footer__left {
+    flex: 1 0;
+  }
+  .support1 {
+    flex: 1 0;
+  }
+  .footer__bottom {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .support {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__puma {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__rightSkin {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .right1 span {
+    text-align: center;
+  }
+
+  .footer__leftSkin {
+    display: none;
+  }
+  .footer__bottomSkin {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer__rightSkin {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .footer__bottomSkin {
+    align-items: center;
+    justify-content: center;
+  }
+}

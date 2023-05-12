@@ -1,0 +1,52 @@
+#navcontSkin {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbarSkin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ccaedc;
+  color: #ffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  z-index: 3;
+}
+.container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2em;
+  display: flex;
+  list-style: none;
+  width: 50%;
+  justify-content: space-between;
+}
+#iconsNav {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+}
+#burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: none;
+  }
+  .iconsNav {
+    display: none;
+  }
+  #burger {
+    display: block;
+  }
+}

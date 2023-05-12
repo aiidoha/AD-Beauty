@@ -7,6 +7,7 @@ import cartIcon from "../../assets/cartIcon.png";
 import Navbar from "../../Navbar/Navbar";
 import { useProducts } from "../../../contexts/ProductContextProvider";
 import ProductCard from "../ProductCard";
+import Footer from "../../Footer/Footer";
 
 const ProductList = () => {
   const { products, getProducts } = useProducts();
@@ -29,6 +30,7 @@ const ProductList = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
