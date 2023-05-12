@@ -1,40 +1,88 @@
 #detailModal {
   display: flex;
-  width: 100%;
-  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 #detailRight {
-  width: 50%;
+  width: 100%;
+  height: 400px;
   background-image: url(./assets/bgModalImg.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2rem;
 }
-
 #detailLeft {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
 }
 #detailLeft h4 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 74px;
-
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
   color: #7f2549;
 }
 #detailLeft p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 38px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
 
   color: #7f2549;
 }
 
 #detailLeft button {
-  width: 444px;
-  height: 60px;
-  left: 111px;
-  top: 678px;
-
+  width: 100%;
+  height: 40%;
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 600;
   background: #7f2549;
+  font-size: 1.4rem;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  #detailModal {
+    height: 100vh;
+  }
+
+  #detailRight {
+    width: 50%;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  #detailLeft {
+    width: 50%;
+    padding: 3rem;
+  }
+
+  #detailLeft h4 {
+    font-size: 3em;
+    margin-bottom: 3rem;
+  }
+
+  #detailLeft p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  #detailLeft button {
+    width: 55%;
+    height: 10%;
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
 }
