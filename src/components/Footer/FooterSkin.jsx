@@ -1,18 +1,18 @@
 import React from "react";
-import "./Footer.css";
+import "./FooterSkin.css";
 import Facebook from "../assets/facebook.png";
 import Twitter from "../assets/twitter.png";
 import Insta from "../assets/insta.png";
 
 import Youtube from "../assets/youTube.png";
-const Footer = () => {
+const FooterSkin = () => {
   return (
     <div>
-      <footer>
-        <div className="footer__container">
-          <div className="footer__left">
+      <footer id="footerSkin">
+        <div className="footer__containerSkin">
+          <div className="footer__leftSkin">
             <div className="support1">
-              <div className="first">
+              <div className="firstSkin">
                 <span>Support</span>
               </div>
               <div className="support">
@@ -100,7 +100,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="footer__right">
+          <div className="footer__rightSkin">
             <div className="right1">
               <span>Sign up and get 20% off your first order</span>
               <button className="btn1">Sign up for newsletter</button>
@@ -127,7 +127,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="footer__bottom">
+        <div className="footer__bottomSkin">
           <div className="option">
             <select name="" id="selected2">
               <option value="Кыргызский">Кыргызский</option>
@@ -148,4 +148,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterSkin;

@@ -10,9 +10,9 @@ import heartIcon from "../assets/heartNav.png";
 
 const NavbarSkin = () => {
   return (
-    <div id="navcont">
+    <div id="navcontSkin">
       <div>
-        <div className="container" id="navbar">
+        <div className="container" id="navbarSkin">
           <Link to="/">
             <img src={logoNavBar} alt="logo" />
           </Link>

@@ -5,6 +5,7 @@ import cardBg from "../assets/cardBg.png";
 import "../ProductList/ProductList.css";
 import cartIcon from "../../assets/cartIcon.png";
 import Navbar from "../../Navbar/Navbar";
+import Footer from "../../Footer/Footer";
 
 const ProductList = () => {
   return (
@@ -144,6 +145,7 @@ const ProductList = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

@@ -4,6 +4,7 @@ import emptyHeart from "../assets/Vector.png";
 import fullHeart from "../assets/Vector-1.png";
 import cardBg from "../assets/cardBg.png";
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 const BestSellers = () => {
   return (
     <>
@@ -55,6 +56,7 @@ const BestSellers = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

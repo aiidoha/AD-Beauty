@@ -5,48 +5,49 @@ import fullHeart from "../assets/Vector-1.png";
 import cardBg from "../assets/cardBg.png";
 
 import NavbarSkin from "../../components/Navbar/NavbarSkin";
+import FooterSkin from "../../components/Footer/FooterSkin";
 const BestSellersSkin = () => {
   return (
     <>
       <NavbarSkin />
       <div className="divider"></div>
-      <div id="bestSellersContainer">
-        <div id="bestSellers">
+      <div id="bestSellersContainerSkin">
+        <div id="bestSellersSkin">
           <h2>BEST SELLERS</h2>
-          <div id="bestSellersCards">
-            <div className="card">
-              <div className="cardTop">
-                <img className="cardImg" src={cardBg} alt="" />
-                <img className="cardHeart" src={emptyHeart} alt="" />
+          <div id="bestSellersCardsSkin">
+            <div className="cardSkin">
+              <div className="cardTopSkin">
+                <img className="cardImgSkin" src={cardBg} alt="" />
+                <img className="cardHeartSkin" src={emptyHeart} alt="" />
               </div>
-              <div className="cardBottom">
-                <div className="cardTitle">
+              <div className="cardBottomSkin">
+                <div className="cardTitleSkin">
                   <h4>Title</h4>
                   <span>type</span>
                 </div>
                 <h3>$$$$</h3>
               </div>
             </div>
-            <div className="card">
-              <div className="cardTop">
-                <img className="cardImg" src={cardBg} alt="" />
-                <img className="cardHeart" src={emptyHeart} alt="" />
+           <div className="cardSkin">
+              <div className="cardTopSkin">
+                <img className="cardImgSkin" src={cardBg} alt="" />
+                <img className="cardHeartSkin" src={emptyHeart} alt="" />
               </div>
-              <div className="cardBottom">
-                <div className="cardTitle">
+              <div className="cardBottomSkin">
+                <div className="cardTitleSkin">
                   <h4>Title</h4>
                   <span>type</span>
                 </div>
                 <h3>$$$$</h3>
               </div>
             </div>
-            <div className="card">
-              <div className="cardTop">
-                <img className="cardImg" src={cardBg} alt="" />
-                <img className="cardHeart" src={emptyHeart} alt="" />
+             <div className="cardSkin">
+              <div className="cardTopSkin">
+                <img className="cardImgSkin" src={cardBg} alt="" />
+                <img className="cardHeartSkin" src={emptyHeart} alt="" />
               </div>
-              <div className="cardBottom">
-                <div className="cardTitle">
+              <div className="cardBottomSkin">
+                <div className="cardTitleSkin">
                   <h4>Title</h4>
                   <span>type</span>
                 </div>
@@ -56,6 +57,7 @@ const BestSellersSkin = () => {
           </div>
         </div>
       </div>
+      <FooterSkin />
     </>
   );
 };

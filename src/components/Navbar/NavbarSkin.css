@@ -1,9 +1,9 @@
-#navcont {
+#navcontSkin {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
-#navbar {
+#navbarSkin {
   position: fixed;
   top: 0;
   left: 0;
