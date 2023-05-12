@@ -1,0 +1,149 @@
+{
+  "products": [
+    {
+      "title": "Optimist Soft Radiance Setting Powder",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Setting-Powder-Light-SKU_360x.jpg?v=1639180715",
+      "type": "face",
+      "description": "Super finely milled and silky to the touch, this talc-free loose mineral powder goes on light and airy to provide sheer, seamless coverage with a subtle radiance and a natural finish.",
+      "price": "25",
+      "id": 1
+    },
+    {
+      "title": "Silky Touch Highlighter",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/positive-light-silky-touch-highlighter-flaunt-1440x1952.jpg?v=1669937801",
+      "type": "face",
+      "description": "Finally—the ultra glass-like glow of a liquid highlighter in a convenient powder form. The look: Instantly dewy, smooth, reflective skin—all from an easy compact.",
+      "price": "25",
+      "id": 2
+    },
+    {
+      "title": "Soft Pinch Liquid Blush",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/pdp-sku-Liquid-Blush-Dewy-Hope.jpg?v=1645133400",
+      "type": "face",
+      "description": "Airy, lightweight liquid formula blends and builds effortlessly for a soft flush of color. Infused with long-lasting color pigments for all-day wear—a little goes a long way.",
+      "price": "23",
+      "id": 3
+    },
+    {
+      "title": "Setting Powder",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/vofpk1pjr6eh3azbigvl.jpg?v=1671539684",
+      "type": "face",
+      "description": "my setting powder locks in makeup, mattifies, and minimizes excess shine all in one silky, skin-breathable formula. available in 6 shades, this loose, weightless powder was designed for all skin tones and is a must-have for keeping your makeup looking good all day long.",
+      "price": "26",
+      "id": 4
+    },
+    {
+      "title": "Glow Balm Bundle",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KJC_SUMMER_22_Glow_20Balm_Bundle_01-1.jpg?v=1672604021",
+      "type": "face",
+      "description": "my glow balm bundle features all four easily wearable shades of my lip & cheek glow balm. this silky, weightless cream instantly melts into the skin while providing buildable color without cakiness or streaks. wear it on your cheeks for a second-skin glow, or on your lips for a hint of color and sheen.",
+      "price": "61",
+      "id": 5
+    },
+    {
+      "title": "Pressed Blush Powder",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KC-Blush-WinterKissed-CapOff.jpg?v=1676400349",
+      "type": "face",
+      "description": "my pressed blush powder delivers a long-lasting, velvet-matte flush of color. this lightweight, buildable formula effortlessly blends into skin for a comfortable, non-drying finish.",
+      "price": "20",
+      "id": 6
+    },
+
+    {
+      "title": "Mascara And Liquid Eyeshadows Bundle",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KJC_KVMASC_23_Mascara_and_Liquid_Shadow_Bundle.jpg?v=1680892160",
+      "type": "eye",
+      "description": "my everyday eye essentials bundle features all five shades of my matte liquid eyeshadows and my kylash volume mascara. the eyeshadow’s whipped, cream-to-powder texture seamlessly blends to deliver long-wear, soft-matte color. complete your eye look with my volumizing mascara that provides fuller, lifted, and defined lashes without clumping, smudging, or flaking.",
+      "price": "111.50",
+      "id": 7
+    },
+    {
+      "title": "Mini Mauve Eyeshadow Palette",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KJC_HOLIDAY_GIFT_SET_22_Mini_Kyshadow_Palette_Mauve_Open_V2.jpg?v=1676419630",
+      "type": "eye",
+      "description": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KJC_HOLIDAY_GIFT_SET_22_Mini_Kyshadow_Palette_Mauve_Open_V2.jpg?v=1676419630",
+      "price": "19",
+      "id": 8
+    },
+    {
+      "title": "Gel Eyeliner Pencil",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KC-GelPencil_EPI_2023_MattePlum.jpg?v=1676404506",
+      "type": "eye",
+      "description": "my gel eyeliner pencil lets you create defined eyeliner looks. its ultra-creamy, ultra-gliding formula delivers perfect one-stroke application, with extreme intensity and long-lasting wear.",
+      "price": "16",
+      "id": 9
+    },
+    {
+      "title": "Perfect Strokes Eye Essentials",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/perfect-strokes-eye-essentials-03-1440x1952.jpg?v=1663116429",
+      "type": "eye",
+      "description": "Limited Edition: Everything you need to make Selena’s signature eye look your own, featuring a full-size Perfect Strokes Matte Liquid Liner and a full-size Perfect Strokes Universal Volumizing Mascara.",
+      "price": "30",
+      "id": 10
+    },
+    {
+      "title": "Rare Beauty Discovery Eyeshadow Palette",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/discovery-eyeshadow-palette-give-yourself-grace-ecomm-02-1440x1952.jpg?v=1677872715",
+      "type": "eye",
+      "description": "An eyeshadow palette of seven rich, buttery shades in a range of long-lasting finishes, each inspired by our iconic Soft Pinch Liquid Blush collection.",
+      "price": "29",
+      "id": 11
+    },
+    {
+      "title": "Brow Harmony Shape & Fill Duo",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Brow-Harmony-Palette-Rich-Taupe-SKU.jpg?v=1630021439",
+      "type": "eye",
+      "description": "A waterproof brow putty that softly shapes and fills in brows for a natural, mistakeproof look that lasts—complete with a snap-in angled brush and spoolie.",
+      "price": "27",
+      "id": 12
+    },
+    {
+      "title": "Rare Beauty Kind Words Lip Set",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/kind-words-custom-set-1440x1952_360x.jpg?v=1678328542",
+      "type": "eye",
+      "description": "for a natural, mistakeproof look that lasts—complete with a snap-in angled brush and spoolie.",
+      "price": "30",
+      "id": 13
+    },
+    {
+      "title": "Lip Soufflé Matte Lip Cream Duo",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/Holiday-Duo-SKU.jpg?v=1633740142",
+      "type": "lip",
+      "description": "Give the gift of wearable nude lips that go with everything. For a limited time only, bestselling shade Courage, a gorgeous nude mauve, joins new, set-exclusive shade Ambition, a warm golden brown.",
+      "price": "20",
+      "id": 14
+    },
+    {
+      "title": "Soft Pinch Tinted Lip Oil",
+      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/soft-pinch-tinted-lip-oil-hope-1440x1952.jpg?v=1679094432",
+      "type": "lip",
+      "description": "An innovative lip jelly that transforms into a lightweight oil, starting off glossy, then leaving lips tinted while staying comfortable—never sticky—all day.",
+      "price": "20",
+      "id": 15
+    },
+    {
+      "title": "Kylie's Favorites Lip Kit Trio",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KJC_Bundle_KylieFavoriteLipKits_30c4548c-9563-4d75-b4d3-93f434514d57.jpg?v=1672602703",
+      "type": "lip",
+      "description": "my favorites lip kit trio contains three of my go-to shades for the perfect matte lip look. each kit comes with a matte liquid lipstick and lip liner duo that lets you create highly pigmented, long-lasting lip looks.",
+      "price": "91.50",
+      "id": 16
+    },
+    {
+      "title": "Pamper Your Pout Bundle - Kylie",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KS_Pamper-Your-Pout_Ecomm-Pink_01.jpg?v=1676680377",
+      "type": "lip",
+      "description": "my pamper your pout bundle – kylie contains three must-haves for getting a smooth and non-drying matte lip look. this bundle features my exfoliating sugar lip scrub, hydrating lip oil, and highly pigmented matte lip kit in the shade kylie, a soft dusty rose.",
+      "price": "70",
+      "id": 17
+    },
+    {
+      "title": "high gloss trio",
+      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KJC_HOLIDAY_20GIFT_20SET_22_High_20Gloss_20Set_01_WS.jpg?v=1674192762",
+      "type": "lip",
+      "description": "My high gloss trio adds the perfect shine that’ll last through any party. featuring three versatile, ultra-shiny shades, this non-sticky formula is comfortable to wear and can be worn on its own or layered over your favorite lipstick.",
+      "price": "30",
+      "id": 18
+    }
+  ]
+}

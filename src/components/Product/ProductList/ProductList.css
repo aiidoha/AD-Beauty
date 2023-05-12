@@ -69,9 +69,9 @@
 .listCardTitle h4 {
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.15rem;
   line-height: 29px;
-  text-align: center;
+  text-align: start;
   color: #7f2549;
 }
 
