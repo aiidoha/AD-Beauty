@@ -4,12 +4,13 @@ import fullHeart from "../Product/assets/Vector-1.png";
 import cardBg from "../Product/assets/cardBg.png";
 import "../Product/ProductList/ProductList.css";
 import cartIcon from "../assets/cartIcon.png";
-import NavbarSkin from "../Navbar/NavbarSkin";
+
 import FooterSkin from "../Footer/FooterSkin";
+import NavbarSkin from "../Navbar/NavbarSkin";
 const AdminPanelSkin = () => {
   return (
     <>
-      <NavbarSkin />
+      <NavbarSkin/>
 
       <div id="prodcont">
         <div id="productListContainerSkin">
