@@ -10,12 +10,9 @@ import ProductCard from "../ProductCard";
 import Footer from "../../Footer/Footer";
 
 const ProductList = () => {
-  const { products, getProducts } = useProducts();
+  const { products, getProducts, notskin } = useProducts();
   console.log(products);
-  const product = [...products];
-  function notskin() {
-    return product.filter((elem) => elem.division !== "skin");
-  }
+  // const product = [...products];
 
   useEffect(() => {
     getProducts();
@@ -26,11 +23,13 @@ const ProductList = () => {
   return (
     <>
       <Navbar />
-      <div id="all" className="divider"></div>
+      <div className="divider"></div>
       <div id="prodcont">
         <div id="productListContainer">
           <div id="productList">
-            <h2 className="addBlockH2">ALL</h2>
+            <h2 id="all" className="addBlockH2">
+              ALL
+            </h2>
             <div id="productListCards">
               {skinProducts.map((item) => (
                 <ProductCard key={item.id} item={item} />

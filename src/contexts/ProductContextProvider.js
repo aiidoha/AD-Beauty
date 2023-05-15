@@ -40,9 +40,21 @@ const ProductContextProvider = ({ children }) => {
     // здесь мы поместили в состояние то что получили выше. можно заметить что под ключом payload теперь лежит data  которая как раз таки хранит в себе все данные api
     dispatch({ type: ACTIONS.GET_PRODUCTS, payload: data });
   };
+
+  // filter для карточек скин или декор
+
+  function notskin() {
+    return state.products.filter((elem) => elem.division !== "skin");
+  }
+  function skin() {
+    return state.products.filter((elem) => elem.division === "skin");
+  }
+
   const values = {
     getProducts,
     products: state.products,
+    notskin,
+    skin,
   };
   return (
     <productContext.Provider value={values}>{children}</productContext.Provider>

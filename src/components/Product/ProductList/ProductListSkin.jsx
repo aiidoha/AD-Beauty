@@ -11,12 +11,7 @@ import ProductCardSkin from "../ProductCardSkin";
 import { useProducts } from "../../../contexts/ProductContextProvider";
 
 const ProductListSkin = () => {
-  const { products, getProducts } = useProducts();
-  console.log(products);
-  const product = [...products];
-  function skin() {
-    return product.filter((elem) => elem.division === "skin");
-  }
+  const { skin, getProducts } = useProducts();
 
   useEffect(() => {
     getProducts();
@@ -27,11 +22,13 @@ const ProductListSkin = () => {
   return (
     <>
       <NavbarSkin />
-      <div id="all" className="divider"></div>
+      <div className="divider"></div>
       <div id="prodcontSkin">
         <div id="productListContainerSkin">
           <div id="productListSkin">
-            <h2 className="addBlockH2Skin">ALL</h2>
+            <h2 id="all" className="addBlockH2Skin">
+              ALL
+            </h2>
             <div id="productListCardsSkin">
               {skinProducts.map((item) => (
                 <ProductCardSkin key={item.id} item={item} />

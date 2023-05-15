@@ -8,18 +8,14 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { useProducts } from "../../contexts/ProductContextProvider";
 const AdminPanel = () => {
-  const { products, getProducts } = useProducts();
-  console.log(products);
-  const product = [...products];
-  function notskin() {
-    return product.filter((elem) => elem.division !== "skin");
-  }
+  const { getProducts, notskin } = useProducts();
 
   useEffect(() => {
     getProducts();
     notskin();
   }, []);
-  const skinProducts = notskin();
+  const products = notskin();
+  console.log(products);
   return (
     <>
       <div className="divider"></div>
@@ -33,135 +29,40 @@ const AdminPanel = () => {
             </div>
             <div id="productListCards">
               {/*  */}
-              <div className="listCard">
-                <div className="listCardTop">
-                  <img className="listCardImg" src={cardBg} alt="" />
-                  <img className="listCardHeart" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottom">
-                  <div className="listCardTitle">
-                    <h4>Title</h4>
-                    <span>type</span>
+              {products.map((item) => (
+                <div id="admincardcont">
+                  <div id="cardAdmin" className="listCard">
+                    <div className="listCardTop">
+                      <img
+                        className="listCardImg"
+                        src={item.image}
+                        style={{ height: "372px" }}
+                        alt=""
+                      />
+                      <img className="listCardHeart" src={emptyHeart} alt="" />
+                    </div>
+                    <div className="listCardBottom">
+                      <div className="listCardTitle">
+                        <h4>{item.title}</h4>
+                        {/* <span>type</span> */}
+                      </div>
+                      <div>
+                        <h3>${item.price}</h3>
+                        <img
+                          src={cartIcon}
+                          alt="aidai"
+                          style={{ padding: "5px 13px" }}
+                        />
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <h3>$$$$</h3>
-                    <img
-                      src={cartIcon}
-                      alt="aidai"
-                      style={{ padding: "5px 13px" }}
-                    />
+                  <div className="adminBtns">
+                    <button className="editdelete">EDIT</button>
+                    <button className="editdelete">DELETE</button>
                   </div>
                 </div>
-                <div className="adminBtns">
-                  <button className="editdelete">EDIT</button>
-                  <button className="editdelete">DELETE</button>
-                </div>
-              </div>
-              {/*  */}
-              <div className="listCard">
-                <div className="listCardTop">
-                  <img className="listCardImg" src={cardBg} alt="" />
-                  <img className="listCardHeart" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottom">
-                  <div className="listCardTitle">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
-              <div className="listCard">
-                <div className="listCardTop">
-                  <img className="listCardImg" src={cardBg} alt="" />
-                  <img className="listCardHeart" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottom">
-                  <div className="listCardTitle">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
-              <div className="listCard">
-                <div className="listCardTop">
-                  <img className="listCardImg" src={cardBg} alt="" />
-                  <img className="listCardHeart" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottom">
-                  <div className="listCardTitle">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
-              <div className="listCard">
-                <div className="listCardTop">
-                  <img className="listCardImg" src={cardBg} alt="" />
-                  <img className="listCardHeart" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottom">
-                  <div className="listCardTitle">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
-              <div className="listCard">
-                <div className="listCardTop">
-                  <img className="listCardImg" src={cardBg} alt="" />
-                  <img className="listCardHeart" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottom">
-                  <div className="listCardTitle">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
-              <div className="listCard">
-                <div className="listCardTop">
-                  <img className="listCardImg" src={cardBg} alt="" />
-                  <img className="listCardHeart" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottom">
-                  <div className="listCardTitle">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
-              <div className="listCard">
-                <div className="listCardTop">
-                  <img className="listCardImg" src={cardBg} alt="" />
-                  <img className="listCardHeart" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottom">
-                  <div className="listCardTitle">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
-              <div className="listCard">
-                <div className="listCardTop">
-                  <img className="listCardImg" src={cardBg} alt="" />
-                  <img className="listCardHeart" src={emptyHeart} alt="" />
-                </div>
-                <div className="listCardBottom">
-                  <div className="listCardTitle">
-                    <h4>Title</h4>
-                    <span>type</span>
-                  </div>
-                  <h3>$$$$</h3>
-                </div>
-              </div>
+              ))}
+              ;{/*  */}
             </div>
           </div>
         </div>
