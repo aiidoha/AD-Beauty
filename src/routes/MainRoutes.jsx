@@ -17,6 +17,8 @@ import AddProduct from "../components/Product/AddProduct";
 import AddProductSkin from "../components/Product/AddProductSkin";
 import EditProduct from "../components/Product/EditProduct";
 import Details from "../components/Product/Details";
+import Authorization from "../components/Product/Authorization";
+import AuthorizationSkin from "../components/Product/AuthorizationSkin";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -39,6 +41,8 @@ const MainRoutes = () => {
     { link: "/add", element: <AddProduct />, id: 17 },
     { link: "/addSkin", element: <AddProductSkin />, id: 18 },
     // { link: "/detailsModal", element: <Details />, id: 19 },
+    { link: "/authorization", element: <Authorization />, id: 20 },
+    { link: "/authorizationSkin", element: <AuthorizationSkin />, id: 20 },
   ];
 
   return (

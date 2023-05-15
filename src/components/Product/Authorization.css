@@ -1,0 +1,81 @@
+#autoside {
+  background-color: #f5dee3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#autosideSkin {
+  background-color: #f2defd;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#autoside h2,
+#autosideSkin h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  padding: 2%;
+}
+
+#autoside h2 {
+  color: #b3848f;
+}
+
+#autosideSkin h2 {
+  color: #7f2549;
+}
+
+#autoside input,
+#autosideSkin input {
+  border: 2px solid;
+  padding: 1rem;
+  width: 20rem;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.autoinp {
+  margin-bottom: 2%;
+}
+
+.autoBtn,
+.autoBtnSkin {
+  width: 20%;
+  height: 3rem;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #autoside h2,
+  #autosideSkin h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  #autoside input,
+  #autosideSkin input {
+    width: 100%;
+  }
+
+  .autoBtn,
+  .autoBtnSkin {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
