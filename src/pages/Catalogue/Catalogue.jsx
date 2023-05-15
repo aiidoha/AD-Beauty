@@ -4,30 +4,37 @@ import "../Catalogue/Catalogue.css";
 import lip from "../assets/lip.png";
 import face from "../assets/face.png";
 import Navbar from "../../components/Navbar/Navbar";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
-import faceBg from "../assets/faceBg.jpg";
-import eyebg from "../assets/eyeBg.jpg";
-import lipsBg from "../assets/lipsBg.jpg";
+
 import Footer from "../../components/Footer/Footer";
+import { useNavigate } from "react-router-dom";
 const Catalogue = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar />
       <div id="catalogueContainer">
         <h2>SHOP BY CATEGORY</h2>
         <div id="catalogueWhiteBg">
-          <div id="categoryLeft" className="categoryEye">
+          <div
+            onClick={() => navigate("/eye")}
+            id="categoryLeft"
+            className="categoryEye"
+          >
             <img className="categoryTitle" src={eye} alt="" />
           </div>
           <div id="categoryRight">
-            <div id="lipCont" className="categoryLip">
+            <div
+              onClick={() => navigate("/lip")}
+              id="lipCont"
+              className="categoryLip"
+            >
               <img className="categoryTitle" src={lip} alt="" />
             </div>
-            <div id="faceCont" className="categoryFace">
+            <div
+              onClick={() => navigate("/face")}
+              id="faceCont"
+              className="categoryFace"
+            >
               <img className="categoryTitle" src={face} alt="" />
             </div>
           </div>

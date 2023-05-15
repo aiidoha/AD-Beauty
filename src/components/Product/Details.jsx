@@ -1,20 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import modalImg from "./assets/bgModalImg.png";
 import "./Details.css";
-const Details = () => {
+import { useProducts } from "../../contexts/ProductContextProvider";
+const Details = ({}) => {
+  const { products, getProducts } = useProducts();
+
+  const product = [...products];
+
+  useEffect(() => {
+    getProducts();
+  }, []);
   return (
-    <div id="detailModal">
-      <div id="detailLeft">
-        <h4>Always An Optimist 4-In-1 Mist</h4>
-        <p>
-          An ultra-fine, all-in-one face mist packed with skin-loving
-          ingredients to hydrate, prime, set, and refresh for an uplifting
-          glow-boost that lasts.
-        </p>
-        <button>ADD TO CART $$$$</button>
-      </div>
-      <div id="detailRight"></div>
-    </div>
+    <>
+      {product.map((item) => (
+        <div id="detailModal">
+          <div id="detailLeft">
+            <h4>{item.title}</h4>
+            <p>{item.description}</p>
+            <button>{`ADD TO CART $${item.price}  `}</button>
+          </div>
+          <img src={item.image} id="detailRight" />
+        </div>
+      ))}
+    </>
   );
 };
 

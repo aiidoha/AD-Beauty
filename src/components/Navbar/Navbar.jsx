@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logoNavBar from "../assets/logoNavBar.png";
 import searchNav from "../assets/searchNav.png";
 import favorites from "../assets/favoritesNav.png";
 import adminNav from "../assets/adminIconNav.png";
 import burger from "../assets/burgerMenu.png";
 import "../Navbar/NavBar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import heartIcon from "../assets/heartNav.png";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [search, setSearch] = useState(searchParams.get("q") || "");
+
+  useEffect(() => {
+    setSearchParams({
+      q: search,
+    });
+  }, [search]);
   return (
     <div id="navcont">
       <div>
@@ -37,8 +46,14 @@ const Navbar = () => {
             </Link>
           </ul>
           <div id="iconsNav">
+            <input
+              onChange={(e) => setSearch(e.target.value)}
+              id="searchInp"
+              type="text"
+            />
             <img src={searchNav} alt="" />
-            <img src={favorites} alt="" />
+
+            <img onClick={() => navigate("/cart")} src={favorites} alt="" />
             <img src={adminNav} alt="" />
             <img src={heartIcon} alt="" />
           </div>

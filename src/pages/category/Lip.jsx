@@ -2,19 +2,19 @@ import React, { useEffect, useState } from "react";
 import emptyHeart from "../assets/Vector.png";
 import fullHeart from "../assets/Vector-1.png";
 import cardBg from "../assets/cardBg.png";
-import "../ProductList/ProductList.css";
-import cartIcon from "../../assets/cartIcon.png";
-import Navbar from "../../Navbar/Navbar";
-import { useProducts } from "../../../contexts/ProductContextProvider";
-import ProductCard from "../ProductCard";
-import Footer from "../../Footer/Footer";
-import Pagination from "@mui/material/Pagination";
-
+import "../../components/Product/ProductList/ProductList.css";
+import cartIcon from "../../components/assets/cartIcon.png";
+import { useProducts } from "../../contexts/ProductContextProvider";
 import { useSearchParams } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
+import { Pagination } from "@mui/material";
+import ProductCard from "../../components/Product/ProductCard";
+import Navbar from "../../components/Navbar/Navbar";
 
-const ProductList = () => {
-  const { products, getProducts, notskin, categoryEye } = useProducts();
+const Lip = () => {
+  const { products, getProducts, categoryLip, notskin } = useProducts();
   const [searchParams, setSearchParams] = useSearchParams();
+  const lipcat = categoryLip();
   // !SEARCH
   useEffect(() => {
     getProducts();
@@ -33,14 +33,15 @@ const ProductList = () => {
   const skinProducts = notskin();
 
   useEffect(() => {
-    categoryEye();
+    getProducts();
+    categoryLip();
   }, []);
   // !PAGINATION
 
   //pagination
   const [page, setPage] = useState(1); // текущая страница
   const itemsPerPage = 3; // кол-во элементов на одной странице
-  const count = Math.ceil(skinProducts?.length / itemsPerPage); // общее кол-во страниц пагинации
+  const count = Math.ceil(lipcat?.length / itemsPerPage); // общее кол-во страниц пагинации
 
   // функция для изменения состояния текущей страницы
   const handleChange = (e, p) => {
@@ -54,7 +55,7 @@ const ProductList = () => {
     // конечный индекс
     const end = begin + itemsPerPage;
     // возвращаем массив, состоящий из фиксированного кол-ва элементов
-    return skinProducts.slice(begin, end);
+    return lipcat.slice(begin, end);
   }
 
   return (
@@ -88,4 +89,4 @@ const ProductList = () => {
   );
 };
 
-export default ProductList;
+export default Lip;

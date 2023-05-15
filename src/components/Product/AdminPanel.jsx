@@ -7,8 +7,10 @@ import cartIcon from "../assets/cartIcon.png";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { useProducts } from "../../contexts/ProductContextProvider";
+import { Link, useNavigate } from "react-router-dom";
 const AdminPanel = () => {
-  const { getProducts, notskin } = useProducts();
+  const navigate = useNavigate();
+  const { getProducts, notskin, deleteProduct } = useProducts();
 
   useEffect(() => {
     getProducts();
@@ -25,7 +27,9 @@ const AdminPanel = () => {
           <div id="productList">
             <div id="addBlock">
               <h2 className="addBlockH2">ALL</h2>{" "}
-              <button id="add">ADD PRODUCT</button>
+              <Link id="add" to="/add">
+                <button>ADD PRODUCT</button>
+              </Link>
             </div>
             <div id="productListCards">
               {/*  */}
@@ -57,8 +61,18 @@ const AdminPanel = () => {
                     </div>
                   </div>
                   <div className="adminBtns">
-                    <button className="editdelete">EDIT</button>
-                    <button className="editdelete">DELETE</button>
+                    <button
+                      onClick={() => navigate(`/edit/${item.id}`)}
+                      className="editdelete"
+                    >
+                      EDIT
+                    </button>
+                    <button
+                      onClick={() => deleteProduct(item.id)}
+                      className="editdelete"
+                    >
+                      DELETE
+                    </button>
                   </div>
                 </div>
               ))}

@@ -2,18 +2,19 @@ import React, { useEffect, useState } from "react";
 import emptyHeart from "../assets/Vector.png";
 import fullHeart from "../assets/Vector-1.png";
 import cardBg from "../assets/cardBg.png";
-import "../ProductList/ProductList.css";
-import cartIcon from "../../assets/cartIcon.png";
-import Navbar from "../../Navbar/Navbar";
-import { useProducts } from "../../../contexts/ProductContextProvider";
-import ProductCard from "../ProductCard";
-import Footer from "../../Footer/Footer";
-import Pagination from "@mui/material/Pagination";
-
+import "../../components/Product/ProductList/ProductList.css";
+import cartIcon from "../../components/assets/cartIcon.png";
+import { useProducts } from "../../contexts/ProductContextProvider";
 import { useSearchParams } from "react-router-dom";
 
-const ProductList = () => {
-  const { products, getProducts, notskin, categoryEye } = useProducts();
+import { Pagination } from "@mui/material";
+
+import NavbarSkin from "../../components/Navbar/NavbarSkin";
+import FooterSkin from "../../components/Footer/FooterSkin";
+import ProductCardSkin from "../../components/Product/ProductCardSkin";
+
+const Cleanser = () => {
+  const { products, getProducts, categoryCleanser, skin } = useProducts();
   const [searchParams, setSearchParams] = useSearchParams();
   // !SEARCH
   useEffect(() => {
@@ -28,19 +29,21 @@ const ProductList = () => {
   // ! фильтр для отображения декор
   useEffect(() => {
     getProducts();
-    notskin();
+    skin();
   }, []);
-  const skinProducts = notskin();
+
+  const catCleanser = categoryCleanser();
 
   useEffect(() => {
-    categoryEye();
+    getProducts();
+    categoryCleanser();
   }, []);
   // !PAGINATION
 
   //pagination
   const [page, setPage] = useState(1); // текущая страница
   const itemsPerPage = 3; // кол-во элементов на одной странице
-  const count = Math.ceil(skinProducts?.length / itemsPerPage); // общее кол-во страниц пагинации
+  const count = Math.ceil(catCleanser?.length / itemsPerPage); // общее кол-во страниц пагинации
 
   // функция для изменения состояния текущей страницы
   const handleChange = (e, p) => {
@@ -54,12 +57,12 @@ const ProductList = () => {
     // конечный индекс
     const end = begin + itemsPerPage;
     // возвращаем массив, состоящий из фиксированного кол-ва элементов
-    return skinProducts.slice(begin, end);
+    return catCleanser.slice(begin, end);
   }
 
   return (
     <>
-      <Navbar />
+      <NavbarSkin />
       <div className="divider"></div>
       <div id="prodcont">
         <div id="productListContainer">
@@ -69,7 +72,7 @@ const ProductList = () => {
             </h2>
             <div id="productListCards">
               {currentData().map((item) => (
-                <ProductCard key={item.id} item={item} />
+                <ProductCardSkin key={item.id} item={item} />
               ))}
             </div>
           </div>
@@ -83,9 +86,9 @@ const ProductList = () => {
         variant="outlined"
         color="secondary"
       />
-      <Footer />
+      <FooterSkin />
     </>
   );
 };
 
-export default ProductList;
+export default Cleanser;
