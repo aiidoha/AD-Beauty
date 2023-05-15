@@ -7,6 +7,7 @@ import burger from "../assets/burgerMenu.png";
 import "../Navbar/NavBar.css";
 import { Link } from "react-router-dom";
 import heartIcon from "../assets/heartNav.png";
+
 const Navbar = () => {
   return (
     <div id="navcont">

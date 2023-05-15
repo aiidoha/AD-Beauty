@@ -4,9 +4,10 @@ import fullHeart from "../Product/assets/Vector-1.png";
 import cardBg from "../Product/assets/cardBg.png";
 import "../Product/ProductList/ProductList.css";
 import cartIcon from "../assets/cartIcon.png";
-import NavbarSkin from "../Navbar/NavbarSkin";
+
 import FooterSkin from "../Footer/FooterSkin";
 import { useProducts } from "../../contexts/ProductContextProvider";
+import NavbarSkin from "../Navbar/NavbarSkin";
 const AdminPanelSkin = () => {
   const { skin, getProducts } = useProducts();
 
@@ -19,6 +20,7 @@ const AdminPanelSkin = () => {
   return (
     <>
       <div className="divider"></div>
+      <NavbarSkin />
       <NavbarSkin />
 
       <div id="prodcont">

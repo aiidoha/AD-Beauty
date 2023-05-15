@@ -5,6 +5,7 @@ import "../HomePage/Home.css";
 import ProductList from "../../components/Product/ProductList/ProductList";
 import AddProduct from "../../components/Product/AddProduct";
 
+
 const Home = () => {
   return (
     <>
@@ -22,6 +23,7 @@ const Home = () => {
           <img id="rightHomePage" src={HomeBg} alt="" />
         </div>
         <ProductList />
+    
       </div>
     </>
   );
