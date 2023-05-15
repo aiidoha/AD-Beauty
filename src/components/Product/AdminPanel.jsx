@@ -27,9 +27,9 @@ const AdminPanel = () => {
           <div id="productList">
             <div id="addBlock">
               <h2 className="addBlockH2">ALL</h2>{" "}
-              <Link id="add" to="/add">
-                <button>ADD PRODUCT</button>
-              </Link>
+              <button onClick={() => navigate("/add")} id="add">
+                ADD PRODUCT
+              </button>
             </div>
             <div id="productListCards">
               {/*  */}

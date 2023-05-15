@@ -8,8 +8,10 @@ import cartIcon from "../assets/cartIcon.png";
 import FooterSkin from "../Footer/FooterSkin";
 import { useProducts } from "../../contexts/ProductContextProvider";
 import NavbarSkin from "../Navbar/NavbarSkin";
+import { useNavigate } from "react-router-dom";
 const AdminPanelSkin = () => {
   const { skin, getProducts } = useProducts();
+  const navigate = useNavigate();
 
   useEffect(() => {
     getProducts();
@@ -28,7 +30,9 @@ const AdminPanelSkin = () => {
           <div id="productListSkin">
             <div id="addBlockSkin">
               <h2 className="addBlockH2Skin">ALL</h2>{" "}
-              <button id="add">ADD PRODUCT</button>
+              <button onClick={() => navigate("/addSkin")} id="add">
+                ADD PRODUCT
+              </button>
             </div>
             <div id="productListCardsSkin">
               {/*  */}

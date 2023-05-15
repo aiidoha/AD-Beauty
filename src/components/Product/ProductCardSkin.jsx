@@ -5,7 +5,10 @@ import fullHeart from "../Product/assets/Vector-1.png";
 import cardBg from "../Product/assets/cardBg.png";
 import cartIcon from "../assets/cartIcon.png";
 import "../Product/ProductList/ProductListSkin.css";
+import { useCart } from "../../contexts/CartContextProvider";
 const ProductCardSkin = ({ item }) => {
+  const { addProductToCart, checkProductInCart } = useCart();
+
   const navigate = useNavigate();
   return (
     <div className="listCardSkin">
@@ -25,7 +28,12 @@ const ProductCardSkin = ({ item }) => {
         </div>
         <div>
           <h3>${item.price}</h3>{" "}
-          <img src={cartIcon} alt="aidai" style={{ padding: "5px 13px" }} />
+          <img
+            onClick={() => addProductToCart(item)}
+            src={cartIcon}
+            alt="aidai"
+            style={{ padding: "5px 13px" }}
+          />
         </div>
       </div>
     </div>

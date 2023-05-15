@@ -5,10 +5,11 @@ import favorites from "../assets/favoritesNav.png";
 import adminNav from "../assets/adminIconNav.png";
 import burger from "../assets/burgerMenu.png";
 import "../Navbar/NavbarSkin.css";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import heartIcon from "../assets/heartNav.png";
 
 const NavbarSkin = () => {
+  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const [search, setSearch] = useState(searchParams.get("q") || "");
 
@@ -51,7 +52,7 @@ const NavbarSkin = () => {
               type="text"
             />
             <img src={searchNav} alt="" />
-            <img src={favorites} alt="" />
+            <img onClick={() => navigate("/cart")} src={favorites} alt="" />
             <img src={adminNav} alt="" />
 
             <img src={heartIcon} alt="" />

@@ -10,7 +10,7 @@ export default function ProductCard({ item }) {
   const { addProductToCart, checkProductInCart } = useCart();
   const navigate = useNavigate();
   return (
-    <div className="listCard">
+    <div onClick={() => navigate("/detailsModal")} className="listCard">
       <div className="listCardTop">
         <img
           className="listCardImg"

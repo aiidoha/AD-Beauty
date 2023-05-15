@@ -3,13 +3,17 @@ import modalImg from "./assets/bgModalImg.png";
 import "./Details.css";
 import { useProducts } from "../../contexts/ProductContextProvider";
 const Details = ({}) => {
-  const { products, getProducts } = useProducts();
+  const { products, getProducts, getProductDetails, productDetails } =
+    useProducts();
 
   const product = [...products];
-
+  const id = () => {
+    product.map((item) => item.id);
+  };
   useEffect(() => {
-    getProducts();
+    getProductDetails(id());
   }, []);
+
   return (
     <>
       {product.map((item) => (
