@@ -48,8 +48,8 @@ const EditProduct = () => {
             value={product.title || ""}
             className="inpEditProduct"
             type="text"
-            name="title"
             placeholder="Title"
+            name="title"
             onChange={handleInp}
           />
 
