@@ -52,8 +52,12 @@ const NavbarSkin = () => {
               type="text"
             />
             <img src={searchNav} alt="" />
-            <img onClick={() => navigate("/cart")} src={favorites} alt="" />
-            <img src={adminNav} alt="" />
+            <img onClick={() => navigate("/cartSkin")} src={favorites} alt="" />
+            <img
+              onClick={() => navigate("/authorizationSkin")}
+              src={adminNav}
+              alt=""
+            />
 
             <img src={heartIcon} alt="" />
           </div>

@@ -6,12 +6,12 @@ import ProductList from "../components/Product/ProductList/ProductList";
 import Catalogue from "../pages/Catalogue/Catalogue";
 import { Route, Routes } from "react-router-dom";
 import NotFoundPage from "../pages/NotFoundPage";
-import AdminPanel from "../components/Product/AdminPanel";
+
 import ProductListSkin from "../components/Product/ProductList/ProductListSkin";
 import BestSellersSkin from "../pages/BestSellers/BestSellersSkin";
 import CatalogueSkin from "../pages/Catalogue/CatalogueSkin";
 import HomeSkin from "../pages/HomePage/HomeSkin";
-import AdminPanelSkin from "../components/Product/AdminPanelSkin";
+
 import EditProductSkin from "../components/Product/EditProductSkin";
 import AddProduct from "../components/Product/AddProduct";
 import AddProductSkin from "../components/Product/AddProductSkin";
@@ -29,6 +29,7 @@ import Toner from "../pages/categorySkin/Toner";
 import Cleanser from "../pages/categorySkin/Cleanser";
 import CartDecor from "../components/Cart/CartDecor";
 import BuyNow from "../components/Cart/BuyNow";
+import CartSkin from "../components/Cart/CartSkin";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -38,7 +39,7 @@ const MainRoutes = () => {
     { link: "/catalogue", element: <Catalogue />, id: 4 },
     { link: "/products", element: <ProductList />, id: 5 },
     { link: "*", element: <NotFoundPage />, id: 6 },
-    { link: "/admin", element: <AdminPanel />, id: 7 },
+
     { link: "/edit/:id", element: <EditProduct />, id: 8 },
     // { link: "/news", element: <NewsPages />, id: 9 },
     // { link: "/cart", element: <CartPage />, id: 10 },
@@ -46,7 +47,7 @@ const MainRoutes = () => {
     { link: "/bestsellersSkin", element: <BestSellersSkin />, id: 12 },
     { link: "/catalogueSkin", element: <CatalogueSkin />, id: 13 },
     { link: "/homeSkin", element: <HomeSkin />, id: 14 },
-    { link: "/adminSkin", element: <AdminPanelSkin />, id: 15 },
+
     { link: "/editSkin/:id", element: <EditProductSkin />, id: 16 },
     { link: "/add", element: <AddProduct />, id: 17 },
     { link: "/addSkin", element: <AddProductSkin />, id: 18 },
@@ -62,7 +63,8 @@ const MainRoutes = () => {
     { link: "/toner", element: <Toner />, id: 28 },
     { link: "/cleanser", element: <Cleanser />, id: 29 },
     { link: "/cart", element: <CartDecor />, id: 30 },
-    { link: "/buy", element: <BuyNow />, id: 30 },
+    { link: "/buy", element: <BuyNow />, id: 31 },
+    { link: "/cartSkin", element: <CartSkin />, id: 32 },
   ];
 
   return (

@@ -6,36 +6,55 @@ import cardBg from "../Product/assets/cardBg.png";
 import cartIcon from "../assets/cartIcon.png";
 import "../Product/ProductList/ProductListSkin.css";
 import { useCart } from "../../contexts/CartContextProvider";
+import { useProducts } from "../../contexts/ProductContextProvider";
+import { useAuth } from "../../contexts/AuthContextProvider";
+import { ADMIN } from "../helpers/consts";
 const ProductCardSkin = ({ item }) => {
   const { addProductToCart, checkProductInCart } = useCart();
-
+  const { deleteProduct } = useProducts();
   const navigate = useNavigate();
+  const {
+    user: { email },
+  } = useAuth();
   return (
-    <div className="listCardSkin">
-      <div className="listCardTopSkin">
-        <img
-          className="listCardImgSkin"
-          src={item.image}
-          alt=""
-          style={{ height: "372px" }}
-        />
-        <img className="listCardHeartSkin" src={emptyHeart} alt="" />
-      </div>
-      <div className="listCardBottomSkin">
-        <div className="listCardTitleSkin">
-          <h4>{item.title}</h4>
-          {/* <span>type</span> */}
-        </div>
-        <div>
-          <h3>${item.price}</h3>
+    <div id="skinadmincardcont">
+      <div id="skinCardAdmin" className="listCardSkin">
+        <div className="listCardTopSkin">
           <img
-            onClick={() => addProductToCart(item)}
-            src={cartIcon}
-            alt="aidai"
-            style={{ padding: "5px 13px" }}
+            className="listCardImgSkin"
+            style={{ height: "372px" }}
+            src={item.image}
+            alt=""
           />
+          <img className="listCardHeartSkin" src={emptyHeart} alt="" />
+        </div>
+        <div className="listCardBottomSkin">
+          <div className="listCardTitleSkin">
+            <h4>{item.title}</h4>
+            {/* <span>type</span> */}
+          </div>
+          <div>
+            <h3>{item.price}</h3>{" "}
+            <img src={cartIcon} alt="aidai" style={{ padding: "5px 13px" }} />
+          </div>
         </div>
       </div>
+      {email === ADMIN ? (
+        <div className="adminBtnsSkin">
+          <button
+            onClick={() => navigate(`/editSkin/${item.id}`)}
+            className="editdeleteSkin"
+          >
+            EDIT
+          </button>
+          <button
+            onClick={() => deleteProduct(item.id)}
+            className="editdeleteSkin"
+          >
+            DELETE
+          </button>
+        </div>
+      ) : null}
     </div>
   );
 };
