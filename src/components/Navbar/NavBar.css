@@ -38,12 +38,20 @@ ul {
 #burger {
   display: none;
 }
-
+#searchInp {
+  align-self: center;
+  border: none;
+  height: 25px;
+  border-radius: 10px;
+}
 @media screen and (max-width: 768px) {
   ul {
     display: none;
   }
-  .iconsNav {
+  #iconsNav img {
+    display: none;
+  }
+  #searchInp {
     display: none;
   }
   #burger {

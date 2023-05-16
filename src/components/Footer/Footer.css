@@ -8,11 +8,11 @@ a {
 footer {
   background-color: #eac6d0;
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
 
 .footer__container {
-  width: 100vw;
+  /* width: 100vw; */
   padding: 5.625rem 0;
   padding-left: 2.5rem;
   padding-right: 2.5rem;

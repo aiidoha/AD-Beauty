@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import emptyHeart from "../assets/Vector.png";
 import fullHeart from "../assets/Vector-1.png";
 import cardBg from "../assets/cardBg.png";
@@ -9,37 +9,81 @@ import NavbarSkin from "../../Navbar/NavbarSkin";
 import FooterSkin from "../../Footer/FooterSkin";
 import ProductCardSkin from "../ProductCardSkin";
 import { useProducts } from "../../../contexts/ProductContextProvider";
+import { useSearchParams } from "react-router-dom";
+import { Pagination } from "@mui/material";
 
 const ProductListSkin = () => {
-  const { products, getProducts } = useProducts();
-  console.log(products);
-  const product = [...products];
-  function skin() {
-    return product.filter((elem) => elem.division === "skin");
-  }
+  const { products, getProducts, skin } = useProducts();
+  const [searchParams, setSearchParams] = useSearchParams();
+  // !SEARCH
+  useEffect(() => {
+    getProducts();
+  }, []);
+  useEffect(() => {
+    getProducts();
+    setPage(1);
+  }, [searchParams]);
 
+  // const product = [...products];
+  // ! фильтр для отображения декор
   useEffect(() => {
     getProducts();
     skin();
   }, []);
-  const skinProducts = skin();
+
+  const skinprod = skin();
+
+  useEffect(() => {
+    getProducts();
+  }, []);
+  // !PAGINATION
+
+  //pagination
+  const [page, setPage] = useState(1); // текущая страница
+  const itemsPerPage = 3; // кол-во элементов на одной странице
+  const count = Math.ceil(skinprod?.length / itemsPerPage); // общее кол-во страниц пагинации
+
+  // функция для изменения состояния текущей страницы
+  const handleChange = (e, p) => {
+    setPage(p);
+  };
+
+  // функция, которая возвращает только те элементы, которые должны отображаться на текущей странице
+  function currentData() {
+    // начальный индекс
+    const begin = (page - 1) * itemsPerPage;
+    // конечный индекс
+    const end = begin + itemsPerPage;
+    // возвращаем массив, состоящий из фиксированного кол-ва элементов
+    return skinprod.slice(begin, end);
+  }
 
   return (
     <>
       <NavbarSkin />
-      <div id="all" className="divider"></div>
-      <div id="prodcontSkin">
-        <div id="productListContainerSkin">
-          <div id="productListSkin">
-            <h2 className="addBlockH2Skin">ALL</h2>
-            <div id="productListCardsSkin">
-              {skinProducts.map((item) => (
+      <div className="divider"></div>
+      <div id="prodcont">
+        <div id="productListContainer">
+          <div id="productList">
+            <h2 id="all" className="addBlockH2">
+              ALL
+            </h2>
+            <div id="productListCards">
+              {currentData().map((item) => (
                 <ProductCardSkin key={item.id} item={item} />
               ))}
             </div>
           </div>
         </div>
       </div>
+      <Pagination
+        sx={{ display: "flex", justifyContent: "center" }}
+        count={count}
+        page={page}
+        onChange={handleChange}
+        variant="outlined"
+        color="secondary"
+      />
       <FooterSkin />
     </>
   );

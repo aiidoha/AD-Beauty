@@ -19,6 +19,16 @@ import EditProduct from "../components/Product/EditProduct";
 import Details from "../components/Product/Details";
 import Authorization from "../components/Product/Authorization";
 import AuthorizationSkin from "../components/Product/AuthorizationSkin";
+import Eye from "../pages/category/Eye";
+import Essence from "../pages/categorySkin/Essence";
+import Lip from "../pages/category/Lip";
+import Face from "../pages/category/Face";
+import Cream from "../pages/categorySkin/Cream";
+import Serum from "../pages/categorySkin/Serum";
+import Toner from "../pages/categorySkin/Toner";
+import Cleanser from "../pages/categorySkin/Cleanser";
+import CartDecor from "../components/Cart/CartDecor";
+import BuyNow from "../components/Cart/BuyNow";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -40,9 +50,19 @@ const MainRoutes = () => {
     { link: "/editSkin/:id", element: <EditProductSkin />, id: 16 },
     { link: "/add", element: <AddProduct />, id: 17 },
     { link: "/addSkin", element: <AddProductSkin />, id: 18 },
-    // { link: "/detailsModal", element: <Details />, id: 19 },
+    { link: "/detailsModal", element: <Details />, id: 19 },
     { link: "/authorization", element: <Authorization />, id: 20 },
-    { link: "/authorizationSkin", element: <AuthorizationSkin />, id: 20 },
+    { link: "/authorizationSkin", element: <AuthorizationSkin />, id: 21 },
+    { link: "/eye", element: <Eye />, id: 22 },
+    { link: "/essence", element: <Essence />, id: 23 },
+    { link: "/lip", element: <Lip />, id: 24 },
+    { link: "/face", element: <Face />, id: 25 },
+    { link: "/cream", element: <Cream />, id: 26 },
+    { link: "/serum", element: <Serum />, id: 27 },
+    { link: "/toner", element: <Toner />, id: 28 },
+    { link: "/cleanser", element: <Cleanser />, id: 29 },
+    { link: "/cart", element: <CartDecor />, id: 30 },
+    { link: "/buy", element: <BuyNow />, id: 30 },
   ];
 
   return (

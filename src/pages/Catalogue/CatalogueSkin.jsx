@@ -8,7 +8,9 @@ import toner from "../assets/toner.png";
 import essence from "../assets/essence.png";
 
 import FooterSkin from "../../components/Footer/FooterSkin";
+import { useNavigate } from "react-router-dom";
 const CatalogueSkin = () => {
+  const navigate = useNavigate();
   return (
     <>
       <NavbarSkin />
@@ -16,20 +18,40 @@ const CatalogueSkin = () => {
         <div id="catalogueContainerSkin">
           <h2>SHOP BY CATEGORY</h2>
           <div id="catalogueWhiteBgSkin">
-            <div id="categoryLeftSkin" className="categorySerum">
+            <div
+              onClick={() => navigate("/serum")}
+              id="categoryLeftSkin"
+              className="categorySerum"
+            >
               <img className="categoryTitleSkin" src={serum} alt="" />
             </div>
-            <div id="categoryLeftToner" className="categoryToner">
+            <div
+              onClick={() => navigate("/toner")}
+              id="categoryLeftToner"
+              className="categoryToner"
+            >
               <img className="categoryTitleSkin" src={toner} alt="" />
             </div>
             <div id="categoryRightSkin">
-              <div id="creamCont" className="categoryCream">
+              <div
+                onClick={() => navigate("/cream")}
+                id="creamCont"
+                className="categoryCream"
+              >
                 <img className="categoryTitleSkin" src={cream} alt="" />
               </div>
-              <div id="cleanserCont" className="categoryCleanser">
+              <div
+                onClick={() => navigate("/cleanser")}
+                id="cleanserCont"
+                className="categoryCleanser"
+              >
                 <img className="categoryTitleSkin" src={cleanser} alt="" />
               </div>
-              <div id="essenceCont" className="categoryEssence">
+              <div
+                onClick={() => navigate("/essence")}
+                id="essenceCont"
+                className="categoryEssence"
+              >
                 <img className="categoryTitleSkin" src={essence} alt="" />
               </div>
             </div>

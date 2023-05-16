@@ -5,10 +5,12 @@ import cardBg from "../Product/assets/cardBg.png";
 import cartIcon from "../assets/cartIcon.png";
 import "../Product/ProductList/ProductList.css";
 import { useNavigate } from "react-router-dom";
+import { useCart } from "../../contexts/CartContextProvider";
 export default function ProductCard({ item }) {
+  const { addProductToCart, checkProductInCart } = useCart();
   const navigate = useNavigate();
   return (
-    <div className="listCard">
+    <div onClick={() => navigate("/detailsModal")} className="listCard">
       <div className="listCardTop">
         <img
           className="listCardImg"
@@ -25,7 +27,12 @@ export default function ProductCard({ item }) {
         </div>
         <div>
           <h3>${item.price}</h3>
-          <img src={cartIcon} alt="aidai" style={{ padding: "5px 13px" }} />
+          <img
+            onClick={() => addProductToCart(item)}
+            src={cartIcon}
+            alt="aidai"
+            style={{ padding: "5px 13px" }}
+          />
         </div>
       </div>
     </div>

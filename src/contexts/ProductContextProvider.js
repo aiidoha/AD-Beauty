@@ -40,9 +40,87 @@ const ProductContextProvider = ({ children }) => {
     // здесь мы поместили в состояние то что получили выше. можно заметить что под ключом payload теперь лежит data  которая как раз таки хранит в себе все данные api
     dispatch({ type: ACTIONS.GET_PRODUCTS, payload: data });
   };
+
+  // filter для карточек скин или декор
+
+  function notskin() {
+    return state.products.filter((elem) => elem.division !== "skin");
+  }
+  function skin() {
+    return state.products.filter((elem) => elem.division === "skin");
+  }
+
+  // !CREATE
+  const addProduct = async (newProduct) => {
+    await axios.post(JSON_API_PRODUCTS, newProduct);
+    navigate("/admin");
+  };
+  // !DELETE
+  const deleteProduct = async (id) => {
+    await axios.delete(`${JSON_API_PRODUCTS}/${id}`);
+    getProducts();
+  };
+  // !DETAILS
+  // получение деталей одного продукта
+  const getProductDetails = async (id) => {
+    const { data } = await axios(`${JSON_API_PRODUCTS}/${id}`);
+    dispatch({
+      type: ACTIONS.GET_PRODUCTS_DETAILS,
+      payload: data,
+    });
+  };
+  // !EDIT
+  // сохранение отредактированного продукта
+  const saveEditedProduct = async (newProduct) => {
+    // отправка patch запроса
+    await axios.patch(`${JSON_API_PRODUCTS}/${newProduct.id}`, newProduct);
+    //стягивание обновленных данных
+    getProducts();
+    navigate("/admin");
+  };
+  // !FILTER
+  function categoryEye() {
+    return state.products.filter((elem) => elem.type == "eye");
+  }
+  function categoryEssence() {
+    return state.products.filter((elem) => elem.type == "essence");
+  }
+  function categoryLip() {
+    return state.products.filter((elem) => elem.type == "lip");
+  }
+  function categoryFace() {
+    return state.products.filter((elem) => elem.type == "face");
+  }
+  function categoryCream() {
+    return state.products.filter((elem) => elem.type == "cream");
+  }
+  function categoryCleanser() {
+    return state.products.filter((elem) => elem.type == "cleanser");
+  }
+  function categorySerum() {
+    return state.products.filter((elem) => elem.type == "serum");
+  }
+  function categoryToner() {
+    return state.products.filter((elem) => elem.type == "toner");
+  }
   const values = {
     getProducts,
     products: state.products,
+    notskin,
+    skin,
+    addProduct,
+    deleteProduct,
+    getProductDetails,
+    productDetails: state.productDetails,
+    saveEditedProduct,
+    categoryEye,
+    categoryEssence,
+    categoryCleanser,
+    categoryCream,
+    categoryFace,
+    categoryLip,
+    categoryToner,
+    categorySerum,
   };
   return (
     <productContext.Provider value={values}>{children}</productContext.Provider>
