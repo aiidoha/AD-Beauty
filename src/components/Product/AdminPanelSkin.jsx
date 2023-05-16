@@ -10,7 +10,7 @@ import { useProducts } from "../../contexts/ProductContextProvider";
 import NavbarSkin from "../Navbar/NavbarSkin";
 import { useNavigate } from "react-router-dom";
 const AdminPanelSkin = () => {
-  const { skin, getProducts } = useProducts();
+  const { skin, getProducts, deleteProduct } = useProducts();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -57,7 +57,7 @@ const AdminPanelSkin = () => {
                         {/* <span>type</span> */}
                       </div>
                       <div>
-                        <h3>item.price</h3>{" "}
+                        <h3>{item.price}</h3>{" "}
                         <img
                           src={cartIcon}
                           alt="aidai"
@@ -67,8 +67,18 @@ const AdminPanelSkin = () => {
                     </div>
                   </div>
                   <div className="adminBtnsSkin">
-                    <button className="editdeleteSkin">EDIT</button>
-                    <button className="editdeleteSkin">DELETE</button>
+                    <button
+                      onClick={() => navigate(`/editSkin/${item.id}`)}
+                      className="editdeleteSkin"
+                    >
+                      EDIT
+                    </button>
+                    <button
+                      onClick={() => deleteProduct(item.id)}
+                      className="editdeleteSkin"
+                    >
+                      DELETE
+                    </button>
                   </div>
                 </div>
               ))}

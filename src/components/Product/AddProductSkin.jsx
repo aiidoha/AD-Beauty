@@ -7,7 +7,7 @@ import FooterSkin from "../Footer/FooterSkin";
 import { useProducts } from "../../contexts/ProductContextProvider";
 
 const AddProductSkin = () => {
-  const { addProduct } = useProducts();
+  const { addProductSkin } = useProducts();
   const [product, setProduct] = useState({
     title: "",
     image: "",
@@ -15,6 +15,7 @@ const AddProductSkin = () => {
     description: "",
     price: "",
     category: "",
+    division: "skin",
   });
   const handleInp = (e) => {
     if (e.target.name === "price") {
@@ -26,7 +27,7 @@ const AddProductSkin = () => {
     } else if (e.target.value.trim() === "") {
       e.preventDefault();
       alert("Please, fill in the fields!");
-      addProduct((e) => e.preventDefault());
+      addProductSkin((e) => e.preventDefault());
     } else {
       let obj = {
         ...product,
@@ -83,7 +84,7 @@ const AddProductSkin = () => {
           />
           <button
             className="btnAddProductSkin"
-            onClick={() => addProduct(product)}
+            onClick={() => addProductSkin(product)}
           >
             ADD PRODUCT
           </button>
