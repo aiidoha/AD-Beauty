@@ -27,7 +27,7 @@ const ProductCardSkin = ({ item }) => {
           {/* <span>type</span> */}
         </div>
         <div>
-          <h3>${item.price}</h3>{" "}
+          <h3>${item.price}</h3>
           <img
             onClick={() => addProductToCart(item)}
             src={cartIcon}

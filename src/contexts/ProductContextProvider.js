@@ -1,5 +1,9 @@
 import React, { createContext, useContext, useReducer } from "react";
-import { ACTIONS, JSON_API_PRODUCTS } from "../components/helpers/consts";
+import {
+  ACTIONS,
+  JSON_API_PRODUCTS,
+  JSON_API_SKIN_PRODUCTS,
+} from "../components/helpers/consts";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 export const productContext = createContext();
@@ -55,6 +59,10 @@ const ProductContextProvider = ({ children }) => {
     await axios.post(JSON_API_PRODUCTS, newProduct);
     navigate("/admin");
   };
+  const addProductSkin = async (newProduct) => {
+    await axios.post(JSON_API_PRODUCTS, newProduct);
+    navigate("/adminSkin");
+  };
   // !DELETE
   const deleteProduct = async (id) => {
     await axios.delete(`${JSON_API_PRODUCTS}/${id}`);
@@ -77,6 +85,13 @@ const ProductContextProvider = ({ children }) => {
     //стягивание обновленных данных
     getProducts();
     navigate("/admin");
+  };
+  const saveEditedProductSkin = async (newProduct) => {
+    // отправка patch запроса
+    await axios.patch(`${JSON_API_PRODUCTS}/${newProduct.id}`, newProduct);
+    //стягивание обновленных данных
+    getProducts();
+    navigate("/adminSkin");
   };
   // !FILTER
   function categoryEye() {
@@ -109,10 +124,12 @@ const ProductContextProvider = ({ children }) => {
     notskin,
     skin,
     addProduct,
+    addProductSkin,
     deleteProduct,
     getProductDetails,
     productDetails: state.productDetails,
     saveEditedProduct,
+    saveEditedProductSkin,
     categoryEye,
     categoryEssence,
     categoryCleanser,
