@@ -14,7 +14,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/positive-light-silky-touch-highlighter-flaunt-1440x1952.jpg?v=1669937801",
       "type": "face",
       "description": "Finally—the ultra glass-like glow of a liquid highlighter in a convenient powder form. The look: Instantly dewy, smooth, reflective skin—all from an easy compact.",
-      "price": "25",
+      "price": 25,
       "id": 2
     },
     {
@@ -226,7 +226,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0558/4135/7989/products/0O8A9509.jpg?v=1654236671&width=3000",
       "type": "serum",
       "description": "This is a 10ml mini size set with 4 types of serums so that you can choose to use or layer them according to your skin type or skin issues. Experience a wonderful journey to find the right product for you before taking the plunge on a full-size",
-      "price": "27",
+      "price": 28,
       "id": 29,
       "division": "skin"
     },

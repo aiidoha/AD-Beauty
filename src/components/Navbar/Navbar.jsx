@@ -7,17 +7,28 @@ import burger from "../assets/burgerMenu.png";
 import "../Navbar/NavBar.css";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import heartIcon from "../assets/heartNav.png";
+import { useAuth } from "../../contexts/AuthContextProvider";
+import { MenuItem, MenuList } from "@mui/material";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const [search, setSearch] = useState(searchParams.get("q") || "");
 
+  // search
   useEffect(() => {
     setSearchParams({
       q: search,
     });
   }, [search]);
+  // search
+
+  // logout/login
+  const {
+    handleLogout,
+    user: { email },
+  } = useAuth();
+
   return (
     <div id="navcont">
       <div>
@@ -54,7 +65,12 @@ const Navbar = () => {
             <img src={searchNav} alt="" />
 
             <img onClick={() => navigate("/cart")} src={favorites} alt="" />
-            <img src={adminNav} alt="" />
+
+            <img
+              onClick={() => navigate("/authorization")}
+              src={adminNav}
+              alt=""
+            />
             <img src={heartIcon} alt="" />
           </div>
           <img id="burger" src={burger} alt="" />

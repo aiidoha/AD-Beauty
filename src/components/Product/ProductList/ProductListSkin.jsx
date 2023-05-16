@@ -8,13 +8,21 @@ import cartIcon from "../../assets/cartIcon.png";
 import NavbarSkin from "../../Navbar/NavbarSkin";
 import FooterSkin from "../../Footer/FooterSkin";
 import ProductCardSkin from "../ProductCardSkin";
-import { useProducts } from "../../../contexts/ProductContextProvider";
-import { useSearchParams } from "react-router-dom";
+
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { Pagination } from "@mui/material";
+
+import { ADMIN } from "../../helpers/consts";
+import { useProducts } from "../../../contexts/ProductContextProvider";
+import { useAuth } from "../../../contexts/AuthContextProvider";
 
 const ProductListSkin = () => {
   const { products, getProducts, skin } = useProducts();
   const [searchParams, setSearchParams] = useSearchParams();
+  const navigate = useNavigate();
+  const {
+    user: { email },
+  } = useAuth();
   // !SEARCH
   useEffect(() => {
     getProducts();
@@ -65,9 +73,19 @@ const ProductListSkin = () => {
       <div id="prodcont">
         <div id="productListContainer">
           <div id="productList">
-            <h2 id="all" className="addBlockH2">
-              ALL
-            </h2>
+            {email === ADMIN ? (
+              <div id="addBlockSkin">
+                <h2 className="addBlockH2Skin">ALL</h2>{" "}
+                <button onClick={() => navigate("/addSkin")} id="add">
+                  ADD PRODUCT
+                </button>
+              </div>
+            ) : (
+              <h2 id="all" className="addBlockH2">
+                ALL
+              </h2>
+            )}
+
             <div id="productListCards">
               {currentData().map((item) => (
                 <ProductCardSkin key={item.id} item={item} />
