@@ -11,7 +11,7 @@ import ProductListSkin from "../components/Product/ProductList/ProductListSkin";
 import BestSellersSkin from "../pages/BestSellers/BestSellersSkin";
 import CatalogueSkin from "../pages/Catalogue/CatalogueSkin";
 import HomeSkin from "../pages/HomePage/HomeSkin";
-import AdminPanelSkin from "../components/Product/AdminPanelSkin";
+
 import EditProductSkin from "../components/Product/EditProductSkin";
 import AddProduct from "../components/Product/AddProduct";
 import AddProductSkin from "../components/Product/AddProductSkin";
@@ -47,7 +47,7 @@ const MainRoutes = () => {
     { link: "/bestsellersSkin", element: <BestSellersSkin />, id: 12 },
     { link: "/catalogueSkin", element: <CatalogueSkin />, id: 13 },
     { link: "/homeSkin", element: <HomeSkin />, id: 14 },
-    { link: "/adminSkin", element: <AdminPanelSkin />, id: 15 },
+
     { link: "/editSkin/:id", element: <EditProductSkin />, id: 16 },
     { link: "/add", element: <AddProduct />, id: 17 },
     { link: "/addSkin", element: <AddProductSkin />, id: 18 },

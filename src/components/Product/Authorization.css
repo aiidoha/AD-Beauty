@@ -1,5 +1,5 @@
 #autoside {
-  background-color: #d8eefc;
+  background-color: #fff;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
   border: 2px solid #7f2549;
   padding: 1rem;
   width: 20rem;
-  border-radius: 15px;
+
   font-size: 20px;
 }
 

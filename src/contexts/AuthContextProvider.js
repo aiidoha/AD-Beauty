@@ -48,6 +48,31 @@ const AuthContextProvider = ({ children }) => {
         }
       });
   };
+
+  // фукнция регистрации SKIN
+  const handleSignUpSkin = () => {
+    clearErrors();
+    // обращаемся к firebase через fire
+    fire
+      .auth() //используем  функцию, которую вернет метод auth()
+      .createUserWithEmailAndPassword(email, password)
+      .then(() => navigate("/homeSkin")) // переход на home, в случае если регистрация прошла успешно
+      .catch((err) => {
+        // обрабатываем ошибки
+        console.log(err);
+        switch (err.code) {
+          case "auth/email-already-in-use":
+          case "auth/invalid-email":
+            setEmailError(err.message);
+            break;
+
+          case "auth/weak-password":
+            setPasswordError(err.message);
+            break;
+        }
+      });
+  };
+
   // функция для login
   const handleLogin = () => {
     clearErrors();
@@ -70,6 +95,27 @@ const AuthContextProvider = ({ children }) => {
       });
   };
 
+  // функция для login SKIN
+  const handleLoginSkin = () => {
+    clearErrors();
+    fire
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .then(() => navigate("/productsSkin"))
+      .catch((err) => {
+        switch (err.code) {
+          case "auth/user-disabled":
+          case "auth/invalid-email":
+          case "auth/user-not-found":
+            setEmailError(err.message);
+            break;
+
+          case "auth/wrong-password":
+            setPasswordError(err.message);
+            break;
+        }
+      });
+  };
   const handleLogout = () => {
     fire.auth().signOut();
   };
@@ -109,6 +155,8 @@ const AuthContextProvider = ({ children }) => {
     handleSignUp,
     handleLogin,
     handleLogout,
+    handleSignUpSkin,
+    handleLoginSkin,
   };
   return <authContext.Provider value={values}>{children}</authContext.Provider>;
 };

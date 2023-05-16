@@ -2,8 +2,7 @@ import React from "react";
 import NavbarSkin from "../Navbar/NavbarSkin";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import { useNavigate } from "react-router-dom";
-import { Grid, Link } from "@mui/material";
-import { ADMIN } from "../helpers/consts";
+import { Grid, Link, TextField } from "@mui/material";
 
 const AuthorizationSkin = () => {
   const {
@@ -16,8 +15,7 @@ const AuthorizationSkin = () => {
     setEmail,
     setPassword,
     setHasAccount,
-    handleSignUp,
-    handleLogin,
+
     handleSignUpSkin,
     handleLoginSkin,
   } = useAuth();
@@ -30,18 +28,22 @@ const AuthorizationSkin = () => {
       <div id="autoside">
         {hasAccount ? <h2>LOGIN</h2> : <h2>REGISTER</h2>}
 
-        <input
-          className="autoinp"
-          type="text"
+        <TextField
+          margin="normal"
+          id="email"
           placeholder="email"
+          autoComplete="email"
+          autoFocus
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           helperText={emailError}
         />
-        <input
-          className="autoinp"
-          type="password"
+        <TextField
+          margin="normal"
           placeholder="password"
+          type="password"
+          id="password"
+          autoComplete="current-password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           helperText={passwordError}

@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import { Button, Grid, Link } from "@mui/material";
+import { Button, Grid, Link, TextField } from "@mui/material";
 import "./Authorization.css";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import { useNavigate } from "react-router-dom";
@@ -29,23 +29,26 @@ const Authorization = () => {
       <div id="autoside">
         {hasAccount ? <h2>LOGIN</h2> : <h2>REGISTER</h2>}
 
-        <input
-          className="autoinp"
-          type="text"
+        <TextField
+          margin="normal"
+          id="email"
           placeholder="email"
+          autoComplete="email"
+          autoFocus
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           helperText={emailError}
         />
-        <input
-          className="autoinp"
-          type="password"
+        <TextField
+          margin="normal"
           placeholder="password"
+          type="password"
+          id="password"
+          autoComplete="current-password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           helperText={passwordError}
         />
-
         {hasAccount ? (
           <button
             className="autoBtn"
