@@ -18,32 +18,6 @@
       "id": 2
     },
     {
-      "title": "Soft Pinch Liquid Blush",
-      "image": "https://cdn.shopify.com/s/files/1/0314/1143/7703/products/pdp-sku-Liquid-Blush-Dewy-Hope.jpg?v=1645133400",
-      "type": "face",
-      "description": "Airy, lightweight liquid formula blends and builds effortlessly for a soft flush of color. Infused with long-lasting color pigments for all-day wear—a little goes a long way.",
-      "price": "23",
-      "category": "fav",
-      "id": 3
-    },
-    {
-      "title": "Setting Powder",
-      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/vofpk1pjr6eh3azbigvl.jpg?v=1671539684",
-      "type": "face",
-      "description": "my setting powder locks in makeup, mattifies, and minimizes excess shine all in one silky, skin-breathable formula. available in 6 shades, this loose, weightless powder was designed for all skin tones and is a must-have for keeping your makeup looking good all day long.",
-      "price": "26",
-      "id": 4
-    },
-    {
-      "title": "Glow Balm Bundle",
-      "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KJC_SUMMER_22_Glow_20Balm_Bundle_01-1.jpg?v=1672604021",
-      "type": "face",
-      "description": "my glow balm bundle features all four easily wearable shades of my lip & cheek glow balm. this silky, weightless cream instantly melts into the skin while providing buildable color without cakiness or streaks. wear it on your cheeks for a second-skin glow, or on your lips for a hint of color and sheen.",
-      "price": "61",
-      "category": "fav",
-      "id": 5
-    },
-    {
       "title": "Pressed Blush Powder",
       "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KC-Blush-WinterKissed-CapOff.jpg?v=1676400349",
       "type": "face",
@@ -51,7 +25,6 @@
       "price": "20",
       "id": 6
     },
-
     {
       "title": "Mascara And Liquid Eyeshadows Bundle",
       "image": "https://cdn.shopify.com/s/files/1/0662/4598/4498/products/KJC_KVMASC_23_Mascara_and_Liquid_Shadow_Bundle.jpg?v=1680892160",
@@ -179,7 +152,6 @@
       "type": "cleanser",
       "description": "Airy, lightweight liquid formula blends and builds effortlessly for a soft flush of color. Infused with long-lasting color pigments for all-day wear—a little goes a long way.",
       "price": "23",
-
       "id": 21,
       "division": "skin"
     },
@@ -211,7 +183,6 @@
       "id": 24,
       "division": "skin"
     },
-
     {
       "title": "Pore-Refining Toner ",
       "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47151_600x.jpg?v=1619802668",
@@ -265,7 +236,6 @@
       "type": "serum",
       "description": "This serum is made for troubles with large pores and inflamed skin.Containing 60% propolis extract and 2% niacinamide, it helps to control sebum secretion and keeps the skin moist.",
       "price": "17",
-
       "id": 30,
       "division": "skin"
     },
@@ -275,7 +245,6 @@
       "type": "cream",
       "description": "Y’all asked—we delivered! The OG formula ain’t goin’ nowhere, but you now have the option to cop a fragrance-free Hydra Vizor. Side note—we don’t have a fragrance-free refill yet, but you can still insert the OG Hydra Vizor Refill into this outer holster.",
       "price": "47",
-
       "id": 31,
       "division": "skin"
     },
@@ -294,7 +263,6 @@
       "type": "cream",
       "description": "Lock in moisture all day long with this full-size dynamic duo to hydrate + protect your skin from pollution with antioxidants in the AM and rest + recover in the PM.",
       "price": "85",
-
       "id": 33,
       "division": "skin"
     },
@@ -322,7 +290,6 @@
       "type": "toner",
       "description": "The power of a serum plus the treatment of a toner in one pore-busting step—now in a jumbo size for the true Fat Water lovers. It tightens the look of pores, helps fade dark spots, smooths and plumps skin, and checks shine—without stripping moisture.",
       "price": "36",
-
       "id": 36,
       "division": "skin"
     },
@@ -354,6 +321,14 @@
       "category": "skinFav",
       "id": 39,
       "division": "skin"
+    },
+    {
+      "name": "Aidai",
+      "description": "dqwjfsvgcblk",
+      "price": 12345678,
+      "picture": "suyaygjxb",
+      "type": "kdwgsahn",
+      "id": 40
     }
   ]
 }
