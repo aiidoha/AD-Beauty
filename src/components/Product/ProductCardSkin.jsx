@@ -20,7 +20,12 @@ const ProductCardSkin = ({ item }) => {
     <div id="skinadmincardcont">
       <div id="skinCardAdmin" className="listCardSkin">
         <div className="listCardTopSkin">
-          <img className="listCardImgSkin" src={item.image} alt="" />
+          <img
+            className="listCardImgSkin"
+            style={{ height: "372px" }}
+            src={item.image}
+            alt=""
+          />
           <img className="listCardHeartSkin" src={emptyHeart} alt="" />
         </div>
         <div className="listCardBottomSkin">
