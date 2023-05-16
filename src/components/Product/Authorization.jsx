@@ -1,16 +1,97 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import { Button } from "@mui/material";
+import { Button, Grid, Link } from "@mui/material";
 import "./Authorization.css";
+import { useAuth } from "../../contexts/AuthContextProvider";
+import { useNavigate } from "react-router-dom";
 const Authorization = () => {
+  const {
+    email,
+    password,
+    user,
+
+    emailError,
+    passwordError,
+    hasAccount,
+
+    setEmail,
+    setPassword,
+    setHasAccount,
+
+    handleSignUp,
+    handleLogin,
+  } = useAuth();
+
+  const navigate = useNavigate();
   return (
     <div>
       <Navbar />
       <div id="autoside">
-        <h2>LOGIN</h2>
-        <input className="autoinp" type="text" placeholder="email" />
-        <input className="autoinp" type="password" placeholder="password" />
-        <button className="autoBtn">Login</button>
+        {hasAccount ? <h2>LOGIN</h2> : <h2>REGISTER</h2>}
+
+        <input
+          className="autoinp"
+          type="text"
+          placeholder="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          helperText={emailError}
+        />
+        <input
+          className="autoinp"
+          type="password"
+          placeholder="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          helperText={passwordError}
+        />
+
+        {hasAccount ? (
+          <button
+            className="autoBtn"
+            onClick={() => {
+              handleLogin();
+            }}
+          >
+            Login
+          </button>
+        ) : (
+          <button
+            className="autoBtn"
+            onClick={() => {
+              handleSignUp();
+            }}
+          >
+            Register
+          </button>
+        )}
+
+        <Grid container sx={{ display: "flex", width: "30%", marginTop: "5%" }}>
+          <Grid item xs>
+            <Link href="#" variant="body2">
+              Forgot password?
+            </Link>
+          </Grid>
+          <Grid item>
+            {hasAccount ? (
+              <Link
+                href="#"
+                variant="body2"
+                onClick={() => setHasAccount(!hasAccount)}
+              >
+                {"Don't have an account? Register Now"}
+              </Link>
+            ) : (
+              <Link
+                href="#"
+                variant="body2"
+                onClick={() => setHasAccount(!hasAccount)}
+              >
+                {"Already have an account? Login"}
+              </Link>
+            )}
+          </Grid>
+        </Grid>
       </div>
     </div>
   );

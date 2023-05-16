@@ -10,11 +10,17 @@ import ProductCard from "../ProductCard";
 import Footer from "../../Footer/Footer";
 import Pagination from "@mui/material/Pagination";
 
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { ADMIN } from "../../helpers/consts";
+import { useAuth } from "../../../contexts/AuthContextProvider";
 
 const ProductList = () => {
   const { products, getProducts, notskin, categoryEye } = useProducts();
   const [searchParams, setSearchParams] = useSearchParams();
+  const navigate = useNavigate();
+  const {
+    user: { email },
+  } = useAuth();
   // !SEARCH
   useEffect(() => {
     getProducts();
@@ -64,9 +70,21 @@ const ProductList = () => {
       <div id="prodcont">
         <div id="productListContainer">
           <div id="productList">
-            <h2 id="all" className="addBlockH2">
-              ALL
-            </h2>
+            {email === ADMIN ? (
+              <div id="addBlock">
+                <h2 id="all" className="addBlockH2">
+                  ALL
+                </h2>
+                <button onClick={() => navigate("/add")} id="add">
+                  ADD PRODUCT
+                </button>
+              </div>
+            ) : (
+              <h2 id="all" className="addBlockH2">
+                ALL
+              </h2>
+            )}
+
             <div id="productListCards">
               {currentData().map((item) => (
                 <ProductCard key={item.id} item={item} />

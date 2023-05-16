@@ -9,6 +9,7 @@ import FooterSkin from "../Footer/FooterSkin";
 import { useProducts } from "../../contexts/ProductContextProvider";
 import NavbarSkin from "../Navbar/NavbarSkin";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContextProvider";
 const AdminPanelSkin = () => {
   const { skin, getProducts } = useProducts();
   const navigate = useNavigate();
@@ -19,10 +20,11 @@ const AdminPanelSkin = () => {
   }, []);
   const skinProducts = skin();
 
+  const { email } = useAuth();
+
   return (
     <>
       <div className="divider"></div>
-      <NavbarSkin />
       <NavbarSkin />
 
       <div id="prodcont">

@@ -5,8 +5,8 @@ import Home from "./pages/HomePage/Home";
 import BestSellers from "./pages/BestSellers/BestSellers";
 import Catalogue from "./pages/Catalogue/Catalogue";
 import ProductList from "./components/Product/ProductList/ProductList";
-import AddProduct from "./components/Product/AdminPanel";
-import AdminPanel from "./components/Product/AdminPanel";
+import AddProduct from "./components/Product/AddProduct";
+
 import MainRoutes from "./routes/MainRoutes";
 // import MainRoutes from "./routes/MainRoutes";
 

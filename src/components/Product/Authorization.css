@@ -1,14 +1,5 @@
 #autoside {
-  background-color: #f5dee3;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#autosideSkin {
-  background-color: #f2defd;
+  background-color: #d8eefc;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,16 +19,12 @@
 }
 
 #autoside h2 {
-  color: #b3848f;
-}
-
-#autosideSkin h2 {
   color: #7f2549;
 }
 
 #autoside input,
 #autosideSkin input {
-  border: 2px solid;
+  border: 2px solid #7f2549;
   padding: 1rem;
   width: 20rem;
   border-radius: 15px;
@@ -53,9 +40,10 @@
   width: 20%;
   height: 3rem;
   background-color: transparent;
-  border: 2px solid;
+  border: 2px solid #7f2549;
   border-radius: 15px;
   font-size: 20px;
+  color: #7f2549;
 }
 
 @media screen and (max-width: 768px) {
@@ -77,5 +65,4 @@
 }
 
 @media screen and (max-width: 1024px) {
-    
 }
