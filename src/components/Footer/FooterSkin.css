@@ -7,11 +7,11 @@ a {
 #footerSkin {
   background-color: #ccaedc;
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
 
 .footer__containerSkin {
-  width: 100vw;
+  /* width: 100vw; */
   padding: 5.625rem 0;
   padding-left: 2.5rem;
   padding-right: 2.5rem;

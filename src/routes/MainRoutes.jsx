@@ -51,7 +51,7 @@ const MainRoutes = () => {
     { link: "/editSkin/:id", element: <EditProductSkin />, id: 16 },
     { link: "/add", element: <AddProduct />, id: 17 },
     { link: "/addSkin", element: <AddProductSkin />, id: 18 },
-    { link: "/detailsModal", element: <Details />, id: 19 },
+    { link: "/detailsModal/:id", element: <Details />, id: 19 },
     { link: "/authorization", element: <Authorization />, id: 20 },
     { link: "/authorizationSkin", element: <AuthorizationSkin />, id: 21 },
     { link: "/eye", element: <Eye />, id: 22 },

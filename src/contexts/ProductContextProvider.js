@@ -72,11 +72,13 @@ const ProductContextProvider = ({ children }) => {
   // получение деталей одного продукта
   const getProductDetails = async (id) => {
     const { data } = await axios(`${JSON_API_PRODUCTS}/${id}`);
+    console.log(data);
     dispatch({
       type: ACTIONS.GET_PRODUCTS_DETAILS,
       payload: data,
     });
   };
+  getProductDetails();
   // !EDIT
   // сохранение отредактированного продукта
   const saveEditedProduct = async (newProduct) => {

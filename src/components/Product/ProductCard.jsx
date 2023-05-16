@@ -9,17 +9,18 @@ import { useCart } from "../../contexts/CartContextProvider";
 import { useProducts } from "../../contexts/ProductContextProvider";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import { ADMIN } from "../helpers/consts";
-export default function ProductCard({ item }) {
+export default function ProductCard({ item, id }) {
   const { addProductToCart, checkProductInCart } = useCart();
   const { deleteProduct } = useProducts();
   const navigate = useNavigate();
   const {
     user: { email },
   } = useAuth();
+
   return (
     <div id="admincardcont">
       <div
-        onClick={() => navigate("/detailsModal")}
+        onClick={() => navigate(`/detailsModal/${id}`)}
         id="cardAdmin"
         className="listCard"
       >

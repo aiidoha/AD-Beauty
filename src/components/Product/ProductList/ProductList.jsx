@@ -87,7 +87,7 @@ const ProductList = () => {
 
             <div id="productListCards">
               {currentData().map((item) => (
-                <ProductCard key={item.id} item={item} />
+                <ProductCard key={item.id} item={item} id={item.id} />
               ))}
             </div>
           </div>
