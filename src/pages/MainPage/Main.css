@@ -8,11 +8,23 @@
   max-width: 100%;
   flex-wrap: wrap;
 }
-#decorMain {
+#decorVid {
+  height: 100vh;
   width: 50%;
+  background-color: #fcd6d8;
+}
+#skinVid {
+  height: 100vh;
+  width: 50%;
+  background-color: #fcd6d8;
+}
+#decorMain {
+  width: 100%;
+  height: 100vh;
 }
 #skincareMain {
-  width: 50%;
+  width: 100%;
+  height: 100vh;
 }
 #mainLogo {
   position: absolute;
