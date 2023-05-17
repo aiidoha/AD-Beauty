@@ -75,7 +75,7 @@ const ProductListSkin = () => {
           <div id="productList">
             {email === ADMIN ? (
               <div id="addBlockSkin">
-                <h2 className="addBlockH2Skin">ALL</h2>{" "}
+                <h2 className="addBlockH2Skin">ALL</h2>
                 <button onClick={() => navigate("/addSkin")} id="add">
                   ADD PRODUCT
                 </button>
@@ -88,7 +88,7 @@ const ProductListSkin = () => {
 
             <div id="productListCards">
               {currentData().map((item) => (
-                <ProductCardSkin key={item.id} item={item} />
+                <ProductCardSkin key={item.id} item={item} id={item.id} />
               ))}
             </div>
           </div>

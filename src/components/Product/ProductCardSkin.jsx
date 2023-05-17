@@ -9,7 +9,7 @@ import { useCart } from "../../contexts/CartContextProvider";
 import { useProducts } from "../../contexts/ProductContextProvider";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import { ADMIN } from "../helpers/consts";
-const ProductCardSkin = ({ item }) => {
+const ProductCardSkin = ({ item, id }) => {
   const { addProductToCart, checkProductInCart } = useCart();
   const { deleteProduct } = useProducts();
   const navigate = useNavigate();
@@ -18,7 +18,11 @@ const ProductCardSkin = ({ item }) => {
   } = useAuth();
   return (
     <div id="skinadmincardcont">
-      <div id="skinCardAdmin" className="listCardSkin">
+      <div
+        onClick={() => navigate(`/detailsModal/${id}`)}
+        id="skinCardAdmin"
+        className="listCardSkin"
+      >
         <div className="listCardTopSkin">
           <img
             className="listCardImgSkin"

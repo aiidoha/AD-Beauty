@@ -18,24 +18,21 @@ const Details = ({}) => {
 
   return (
     <>
-      {/* {product.map((item) => (
+      <>
         <div id="detailModal">
           <div id="detailLeft">
-            <h4>{item.title}</h4>
-            <p>{item.description}</p>
-            <button>{`ADD TO CART $${item.price}  `}</button>
+            <h4>{productDetails.title}</h4>
+            <p>{productDetails.description}</p>
+            <button>{`ADD TO CART $${productDetails.price}  `}</button>
           </div>
-          <img src={item.image} id="detailRight" />
+          <img src={productDetails.image} id="detailRight" />
+          <div id="commentsDetail">
+            <h3>Comments</h3>
+            <input type="text" />
+            <button>Add comment</button>
+          </div>
         </div>
-      ))} */}
-      <div id="detailModal">
-        <div id="detailLeft">
-          <h4>{productDetails.title}</h4>
-          <p>{productDetails.description}</p>
-          <button>{`ADD TO CART $${productDetails.price}  `}</button>
-        </div>
-        <img src={productDetails.image} id="detailRight" />
-      </div>
+      </>
     </>
   );
 };
