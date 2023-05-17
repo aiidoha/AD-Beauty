@@ -112,16 +112,4 @@
     font-size: 3em;
     margin-bottom: 3rem;
   }
-
-  #detailLeft p {
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
-  }
-
-  #detailLeft button {
-    width: 55%;
-    height: 10%;
-    font-size: 1.4rem;
-    padding: 1rem;
-  }
 }

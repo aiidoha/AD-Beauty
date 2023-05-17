@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useReducer } from "react";
+import React, { createContext, useContext, useReducer, useState } from "react";
 import {
   ACTIONS,
   JSON_API_PRODUCTS,
@@ -57,11 +57,11 @@ const ProductContextProvider = ({ children }) => {
   // !CREATE
   const addProduct = async (newProduct) => {
     await axios.post(JSON_API_PRODUCTS, newProduct);
-    navigate("/admin");
+    navigate("/products");
   };
   const addProductSkin = async (newProduct) => {
     await axios.post(JSON_API_PRODUCTS, newProduct);
-    navigate("/adminSkin");
+    navigate("/productsSkin");
   };
   // !DELETE
   const deleteProduct = async (id) => {
@@ -86,14 +86,14 @@ const ProductContextProvider = ({ children }) => {
     await axios.patch(`${JSON_API_PRODUCTS}/${newProduct.id}`, newProduct);
     //стягивание обновленных данных
     getProducts();
-    navigate("/admin");
+    navigate("/products");
   };
   const saveEditedProductSkin = async (newProduct) => {
     // отправка patch запроса
     await axios.patch(`${JSON_API_PRODUCTS}/${newProduct.id}`, newProduct);
     //стягивание обновленных данных
     getProducts();
-    navigate("/adminSkin");
+    navigate("/productsSkin");
   };
   // !FILTER
   function categoryEye() {
@@ -120,6 +120,9 @@ const ProductContextProvider = ({ children }) => {
   function categoryToner() {
     return state.products.filter((elem) => elem.type == "toner");
   }
+  // ! COMMENTS
+  const [comments, setComments] = useState([]);
+
   const values = {
     getProducts,
     products: state.products,
@@ -140,6 +143,7 @@ const ProductContextProvider = ({ children }) => {
     categoryLip,
     categoryToner,
     categorySerum,
+    comments,
   };
   return (
     <productContext.Provider value={values}>{children}</productContext.Provider>
