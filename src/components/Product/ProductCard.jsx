@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import emptyHeart from "../Product/assets/Vector.png";
 import fullHeart from "../Product/assets/Vector-1.png";
 import cardBg from "../Product/assets/cardBg.png";
@@ -16,6 +16,18 @@ export default function ProductCard({ item, id }) {
   const {
     user: { email },
   } = useAuth();
+  const [likes, setLikes] = useState(0);
+  const [isLiked, setIsLiked] = useState(false);
+
+  const handleLikeClick = (e) => {
+    e.stopPropagation();
+    if (isLiked) {
+      setLikes(likes - 1);
+    } else {
+      setLikes(likes + 1);
+    }
+    setIsLiked(!isLiked);
+  };
 
   return (
     <div id="admincardcont">
@@ -31,7 +43,12 @@ export default function ProductCard({ item, id }) {
             style={{ height: "372px" }}
             alt=""
           />
-          <img className="listCardHeart" src={emptyHeart} alt="" />
+          <img
+            className="listCardHeart"
+            src={isLiked ? fullHeart : emptyHeart}
+            alt=""
+            onClick={handleLikeClick}
+          />
         </div>
         <div className="listCardBottom">
           <div className="listCardTitle">

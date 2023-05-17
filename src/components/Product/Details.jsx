@@ -3,10 +3,17 @@ import modalImg from "./assets/bgModalImg.png";
 import "./Details.css";
 import { useProducts } from "../../contexts/ProductContextProvider";
 import { useParams } from "react-router-dom";
+import emptyHeart from "../Product/assets/Vector.png";
+import fullHeart from "../Product/assets/Vector-1.png";
 
 const Details = ({}) => {
-  const { products, getProducts, getProductDetails, productDetails } =
-    useProducts();
+  const {
+    products,
+    getProducts,
+    getProductDetails,
+    productDetails,
+    updateProductLikes,
+  } = useProducts();
 
   const { id } = useParams();
   useEffect(() => {
@@ -14,8 +21,7 @@ const Details = ({}) => {
   }, []);
 
   const [commentText, setCommentText] = useState("");
-
-  const { comments } = useProducts();
+  const [comments, setComments] = useState([]);
 
   const handleCommentChange = (event) => {
     setCommentText(event.target.value);
@@ -23,7 +29,21 @@ const Details = ({}) => {
   };
 
   const handleAddComment = () => {
+    setComments([...comments, commentText]);
     setCommentText("");
+  };
+
+  const [likes, setLikes] = useState(0);
+  const [isLiked, setIsLiked] = useState(false);
+
+  const handleLikeClick = () => {
+    if (isLiked) {
+      setLikes(likes - 1);
+    } else {
+      setLikes(likes + 1);
+    }
+    setIsLiked(!isLiked);
+    updateProductLikes(id, likes + 1);
   };
 
   return (
@@ -44,9 +64,19 @@ const Details = ({}) => {
               onChange={handleCommentChange}
             />
             <button onClick={handleAddComment}>Add comment</button>
-            {comments.map((comment, id) => (
-              <div key={id}>{comment}</div>
-            ))}
+            <div id="commentsAll">
+              {comments.map((comment, id) => (
+                <div key={id}>{comment}</div>
+              ))}
+            </div>
+          </div>
+          <div id="likes">
+            <img
+              src={isLiked ? fullHeart : emptyHeart}
+              alt=""
+              onClick={handleLikeClick}
+            />
+            <h3 id="likesCount">{likes}</h3>
           </div>
         </div>
       </>

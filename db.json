@@ -7,7 +7,8 @@
       "description": "Super finely milled and silky to the touch, this talc-free loose mineral powder goes on light and airy to provide sheer, seamless coverage with a subtle radiance and a natural finish.",
       "price": "25",
       "category": "fav",
-      "id": 1
+      "id": 1,
+      "likes": 1
     },
     {
       "title": "Silky Touch Highlighter",
@@ -321,6 +322,15 @@
       "category": "skinFav",
       "id": 39,
       "division": "skin"
+    },
+    {
+      "title": "dxghchv",
+      "image": "srdtfgyh",
+      "type": "dfgyh",
+      "description": "",
+      "price": 12345678,
+      "category": "",
+      "id": 40
     }
   ]
 }

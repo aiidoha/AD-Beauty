@@ -122,7 +122,18 @@ const ProductContextProvider = ({ children }) => {
   }
   // ! COMMENTS
   const [comments, setComments] = useState([]);
+  // !likes
 
+  const updateProductLikes = async (productId, likesCount) => {
+    try {
+      await axios.patch(`${JSON_API_PRODUCTS}/${productId}`, {
+        likes: likesCount,
+      });
+      console.log("Likes updated successfully");
+    } catch (error) {
+      console.error("Error updating likes:", error);
+    }
+  };
   const values = {
     getProducts,
     products: state.products,
@@ -144,6 +155,8 @@ const ProductContextProvider = ({ children }) => {
     categoryToner,
     categorySerum,
     comments,
+    setComments,
+    updateProductLikes,
   };
   return (
     <productContext.Provider value={values}>{children}</productContext.Provider>
