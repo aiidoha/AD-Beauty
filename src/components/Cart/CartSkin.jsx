@@ -15,16 +15,17 @@ import FooterSkin from "../Footer/FooterSkin";
 
 export default function CartSkin() {
   const navigate = useNavigate();
-  const { getCart, cart, changeProductCount, deleteCartProduct } = useCart();
+  const {
+    getCart,
+    cart,
+    changeProductCount,
+    deleteCartProduct,
+    addProductToCart,
+  } = useCart();
   console.log(cart);
   React.useEffect(() => {
     getCart();
   }, []);
-
-  const cartCleaner = () => {
-    localStorage.removeItem("cart");
-    getCart();
-  };
 
   return (
     <>

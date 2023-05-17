@@ -9,8 +9,11 @@ import { useCart } from "../../contexts/CartContextProvider";
 import { useProducts } from "../../contexts/ProductContextProvider";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import { ADMIN } from "../helpers/consts";
+import { useFavs } from "../../contexts/FavoritesContextProvider";
+import cartChange from "../Product/assets/cartAddedIcon.png";
 export default function ProductCard({ item, id }) {
   const { addProductToCart, checkProductInCart } = useCart();
+
   const { deleteProduct } = useProducts();
   const navigate = useNavigate();
   const {
@@ -18,26 +21,25 @@ export default function ProductCard({ item, id }) {
   } = useAuth();
   const [likes, setLikes] = useState(0);
   const [isLiked, setIsLiked] = useState(false);
+  const {
+    getFavs,
+    favs,
+    changeProductCount,
+    deleteFavsProduct,
+    checkProductInFavs,
+    addProductToFavs,
+  } = useFavs();
+  React.useEffect(() => {
+    getFavs();
+  }, []);
 
-  const handleLikeClick = (e) => {
-    e.stopPropagation();
-    if (isLiked) {
-      setLikes(likes - 1);
-    } else {
-      setLikes(likes + 1);
-    }
-    setIsLiked(!isLiked);
-  };
 
   return (
     <div id="admincardcont">
-      <div
-        onClick={() => navigate(`/detailsModal/${id}`)}
-        id="cardAdmin"
-        className="listCard"
-      >
+      <div id="cardAdmin" className="listCard">
         <div className="listCardTop">
           <img
+            onClick={() => navigate(`/detailsModal/${id}`)}
             className="listCardImg"
             src={item.image}
             style={{ height: "372px" }}
@@ -45,9 +47,9 @@ export default function ProductCard({ item, id }) {
           />
           <img
             className="listCardHeart"
-            src={isLiked ? fullHeart : emptyHeart}
+            src={checkProductInFavs(item.id) ? fullHeart : emptyHeart}
             alt=""
-            onClick={handleLikeClick}
+            onClick={() => addProductToFavs(item)}
           />
         </div>
         <div className="listCardBottom">
@@ -57,7 +59,12 @@ export default function ProductCard({ item, id }) {
           </div>
           <div>
             <h3>${item.price}</h3>
-            <img src={cartIcon} alt="aidai" style={{ padding: "5px 13px" }} />
+            <img
+              onClick={() => addProductToCart(item)}
+              src={checkProductInCart(item.id) ? cartChange : cartIcon}
+              alt="aidai"
+              style={{ padding: "5px 13px" }}
+            />
           </div>
         </div>
       </div>

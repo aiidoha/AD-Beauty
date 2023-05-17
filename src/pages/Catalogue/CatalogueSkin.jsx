@@ -14,6 +14,7 @@ const CatalogueSkin = () => {
   return (
     <>
       <NavbarSkin />
+      <div className="divider"></div>
       <div id="heightSkin">
         <div id="catalogueContainerSkin">
           <h2>SHOP BY CATEGORY</h2>

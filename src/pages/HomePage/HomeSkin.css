@@ -55,7 +55,14 @@
   #rightHomePageSkin {
     display: none;
   }
-  #leftHomePageSkin button {
-    width: 70%;
+  #leftHomePage button {
+    width: 80%;
+    font-size: 1rem;
+  }
+  #leftHomePageSkin h1 {
+    font-size: 2rem;
+  }
+  #leftHomePageSkin h3 {
+    font-size: 1rem;
   }
 }

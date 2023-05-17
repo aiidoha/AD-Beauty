@@ -59,7 +59,7 @@ const BuyNow = () => {
           <h2>Total</h2>
           <h3>{cart?.totalPrice} $</h3>
         </div>
-        <button onClick={() => navigate("/home")} id="buyBtn">
+        <button onClick={() => navigate("/")} id="buyBtn">
           BUY
         </button>
       </div>

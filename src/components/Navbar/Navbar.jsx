@@ -71,7 +71,7 @@ const Navbar = () => {
               src={adminNav}
               alt=""
             />
-            <img src={heartIcon} alt="" />
+            <img onClick={()=> navigate('/favs')} src={heartIcon} alt="" />
           </div>
           <img id="burger" src={burger} alt="" />
         </div>

@@ -38,9 +38,9 @@ const ProductList = () => {
   }, []);
   const skinProducts = notskin();
 
-  useEffect(() => {
-    categoryEye();
-  }, []);
+  // useEffect(() => {
+  //   categoryEye();
+  // }, []);
   // !PAGINATION
 
   //pagination

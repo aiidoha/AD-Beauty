@@ -16,7 +16,8 @@
       "type": "face",
       "description": "Finally—the ultra glass-like glow of a liquid highlighter in a convenient powder form. The look: Instantly dewy, smooth, reflective skin—all from an easy compact.",
       "price": 25,
-      "id": 2
+      "id": 2,
+      "likes": 1
     },
     {
       "title": "Pressed Blush Powder",
@@ -24,7 +25,8 @@
       "type": "face",
       "description": "my pressed blush powder delivers a long-lasting, velvet-matte flush of color. this lightweight, buildable formula effortlessly blends into skin for a comfortable, non-drying finish.",
       "price": "20",
-      "id": 6
+      "id": 6,
+      "likes": 1
     },
     {
       "title": "Mascara And Liquid Eyeshadows Bundle",
@@ -136,7 +138,8 @@
       "price": 45,
       "category": "skinFav",
       "id": 19,
-      "division": "skin"
+      "division": "skin",
+      "likes": 1
     },
     {
       "title": "CLEANS'R REMOVE-IT-ALL CLEANSER ",
@@ -322,15 +325,6 @@
       "category": "skinFav",
       "id": 39,
       "division": "skin"
-    },
-    {
-      "title": "dxghchv",
-      "image": "srdtfgyh",
-      "type": "dfgyh",
-      "description": "",
-      "price": 12345678,
-      "category": "",
-      "id": 40
     }
   ]
 }

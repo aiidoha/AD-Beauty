@@ -10,5 +10,8 @@ export const CART = {
   GET_CART: "GET_CART",
   GET_CART_LENGTH: "GET_CART_LENGTH",
 };
-
+export const FAVS = {
+  GET_FAVS: "GET_FAVS",
+  GET_FAVS_LENGTH: "GET_FAVS_LENGTH",
+};
 export const ADMIN = "admin@gmail.com";

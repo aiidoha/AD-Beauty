@@ -26,6 +26,7 @@ const Authorization = () => {
   return (
     <div>
       <Navbar />
+      <div className="divider"></div>
       <div id="autoside">
         {hasAccount ? <h2>LOGIN</h2> : <h2>REGISTER</h2>}
 

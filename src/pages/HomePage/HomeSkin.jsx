@@ -8,6 +8,7 @@ const HomeSkin = () => {
   return (
     <div>
       <NavbarSkin />
+      <div className="divider"></div>
       <div id="HomePageSkin">
         <div id="leftHomePageSkin">
           <h1>YOUR FAVE LIP COMBO</h1>

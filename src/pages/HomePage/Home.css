@@ -56,6 +56,13 @@
     display: none;
   }
   #leftHomePage button {
-    width: 70%;
+    width: 80%;
+    font-size: 1rem;
+  }
+  #leftHomePage h1 {
+    font-size: 2rem;
+  }
+  #leftHomePage h3 {
+    font-size: 1rem;
   }
 }

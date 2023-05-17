@@ -81,3 +81,9 @@
   text-align: center;
   color: #7f2549;
 }
+
+@media screen and (max-width: 768px) {
+  #favs {
+    width: 300px;
+  }
+}

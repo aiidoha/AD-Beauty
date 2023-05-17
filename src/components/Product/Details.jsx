@@ -5,8 +5,27 @@ import { useProducts } from "../../contexts/ProductContextProvider";
 import { useParams } from "react-router-dom";
 import emptyHeart from "../Product/assets/Vector.png";
 import fullHeart from "../Product/assets/Vector-1.png";
-
 const Details = ({}) => {
+  // const { products, getProducts, getProductDetails, productDetails } =
+  //   useProducts();
+
+  // const { id } = useParams();
+  // useEffect(() => {
+  //   getProductDetails(id);
+  // }, []);
+
+  // const [commentText, setCommentText] = useState("");
+
+  // const { comments } = useProducts();
+
+  // const handleCommentChange = (event) => {
+  //   setCommentText(event.target.value);
+  //   console.log(event);
+  // };
+
+  // const handleAddComment = () => {
+  //   setCommentText("");
+  // };
   const {
     products,
     getProducts,

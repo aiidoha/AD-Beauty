@@ -12,6 +12,7 @@ const Catalogue = () => {
   return (
     <>
       <Navbar />
+      <div className="divider"></div>
       <div id="catalogueContainer">
         <h2>SHOP BY CATEGORY</h2>
         <div id="catalogueWhiteBg">

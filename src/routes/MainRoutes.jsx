@@ -30,6 +30,7 @@ import Cleanser from "../pages/categorySkin/Cleanser";
 import CartDecor from "../components/Cart/CartDecor";
 import BuyNow from "../components/Cart/BuyNow";
 import CartSkin from "../components/Cart/CartSkin";
+import Favorites from "../pages/Favorites/Favorites";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -65,6 +66,7 @@ const MainRoutes = () => {
     { link: "/cart", element: <CartDecor />, id: 30 },
     { link: "/buy", element: <BuyNow />, id: 31 },
     { link: "/cartSkin", element: <CartSkin />, id: 32 },
+    { link: "/favs", element: <Favorites />, id: 33 },
   ];
 
   return (
